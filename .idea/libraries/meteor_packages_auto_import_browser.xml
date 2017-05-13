@@ -4,6 +4,7 @@
       <sourceFilesUrls>
         <item url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/random_tests.js" />
         <item url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/deprecated.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/meteorhacks_picker/1.0.3/web.browser/packages/meteorhacks_picker.js" />
         <item url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/random.js" />
         <item url="file://$USER_HOME$/.meteor/packages/reactive-var/1.0.11/web.browser/reactive-var.js" />
         <item url="file://$USER_HOME$/.meteor/packages/reload/1.1.11/web.browser/reload.js" />
@@ -398,6 +399,7 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/random_tests.js" />
       <root url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/deprecated.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/meteorhacks_picker/1.0.3/web.browser/packages/meteorhacks_picker.js" />
       <root url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/random.js" />
       <root url="file://$USER_HOME$/.meteor/packages/reactive-var/1.0.11/web.browser/reactive-var.js" />
       <root url="file://$USER_HOME$/.meteor/packages/reload/1.1.11/web.browser/reload.js" />

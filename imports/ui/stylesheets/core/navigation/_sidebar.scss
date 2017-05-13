@@ -29,6 +29,10 @@
     -ms-overflow-style: -ms-autohiding-scrollbar;
     @include sidebar-width($sidebar-borders, $sidebar-width);
 
+    a.nav-link {
+      font-size: 14px;
+    }
+
     &::-webkit-scrollbar {
 
       position: absolute;

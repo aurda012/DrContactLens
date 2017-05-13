@@ -17,6 +17,8 @@ import NotFound from '../../ui/pages/NotFound.js';
 import RecoverPassword from '../../ui/pages/RecoverPassword.js';
 import ResetPassword from '../../ui/pages/ResetPassword.js';
 import AdminRegistration from '../../ui/pages/AdminRegistration.js';
+import DoctorRegistration from '../../ui/pages/DoctorRegistration.js';
+import Subscription from '../../ui/pages/Subscriptions';
 import Users from '../../ui/pages/Users';
 
 const authenticate = (nextState, replace) => {
@@ -38,9 +40,11 @@ Meteor.startup(() => {
         <Route name="newDocument" path="/documents/new" component={ NewDocument } onEnter={ authenticate } />
         <Route name="editDocument" path="/documents/:_id/edit" component={ EditDocument } onEnter={ authenticate } />
         <Route name="viewDocument" path="/documents/:_id" component={ ViewDocument } onEnter={ authenticate } />
+        <Route name="subscription" path="/subscription" component={ Subscription } />
       </Route>
       <Route path="/" component={ Registration }>
         <Route name="Admin Registration" path="/admin-registration" component={ AdminRegistration } />
+        <Route name="Doctor Registration" path="/doctor-registration" component={ DoctorRegistration } />
       </Route>
       <Route path="/" component={ LoginLayout }>
         <Route name="login" path="/login" component={ Login } />

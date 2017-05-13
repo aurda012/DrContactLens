@@ -1,6 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import { Accounts } from 'meteor/accounts-base';
+import Plans from '../../api/plans/plans';
 
 if (!Meteor.isProduction) {
   const users = [{
@@ -21,3 +22,26 @@ if (!Meteor.isProduction) {
     }
   });
 }
+
+const plans = [{
+  planId: 'admin',
+  label: 'Admin Account (Wholesaler to other Doctors)',
+  price: 99999,
+}, {
+  planId: 'doctor',
+  label: 'Doctor Portal',
+  price: 9999,
+}, {
+  planId: 'doctor-admin',
+  label: 'Extra Doctor Portal Admin (Large Practice)',
+  price: 999,
+}, {
+  planId: 'patient',
+  label: 'Patient',
+  price: 499,
+}];
+
+plans.forEach(({ planId, label, price }) => {
+  const planExists = Plans.findOne({ planId });
+  if (!planExists) Plans.insert({ planId, label, price });
+});

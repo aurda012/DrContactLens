@@ -1,9 +1,9 @@
-/* eslint-disable no-undef */
+/* eslint-disable no-undef, no-underscore-dangle */
 
 import { browserHistory } from 'react-router';
 import { Accounts } from 'meteor/accounts-base';
 import { Bert } from 'meteor/themeteorchef:bert';
-import './validation.js';
+import './validation';
 
 let component;
 
@@ -37,7 +37,7 @@ const signup = () => {
               if (loginError) {
                 Bert.alert(loginError.reason, 'danger');
               } else {
-                Bert.alert('Welcome to Doxie!', 'success');
+                Bert.alert('Welcome to Dr. Contact Lens!', 'success');
                 browserHistory.push('/documents');
               }
             });
@@ -56,6 +56,24 @@ const validate = () => {
       lastName: {
         required: true,
       },
+      practiceName: {
+        required: true,
+      },
+      practicePhone: {
+        required: true,
+      },
+      practiceStreet: {
+        required: true,
+      },
+      practiceCity: {
+        required: true,
+      },
+      practiceState: {
+        required: true,
+      },
+      practiceZip: {
+        required: true,
+      },
       emailAddress: {
         required: true,
         email: true,
@@ -71,6 +89,24 @@ const validate = () => {
       },
       lastName: {
         required: 'Last name?',
+      },
+      practiceName: {
+        required: 'Practice Name?',
+      },
+      practicePhone: {
+        required: 'Practice Phone?',
+      },
+      practiceStreet: {
+        required: 'Practice Street Address?',
+      },
+      practiceCity: {
+        required: 'Practice City?',
+      },
+      practiceState: {
+        required: 'Practice State?',
+      },
+      practiceZip: {
+        required: 'Practice Zip?',
       },
       emailAddress: {
         required: 'Need an email address here.',
