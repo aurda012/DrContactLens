@@ -1,0 +1,88 @@
+.blue-signup {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background:linear-gradient(0deg,rgba(21,162,254,0.85),rgba(21,162,254,0.85)),url("img/background.jpg");
+  background-size: 100%;
+}
+
+div .Sticky {
+  position: fixed;
+  bottom: 0;
+  margin-top: 5em;
+}
+
+.folded-corner {
+  position: fixed;
+  bottom: 0;
+  background: -moz-linear-gradient(top,  #ffffff 0%, rgba(21,162,254,0.8) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,rgba(21,162,254,0.8))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,rgba(21,162,254,0.8) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 0%,rgba(21,162,254,0.8) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 0%,rgba(21,162,254,0.8) 100%); /* IE10+ */
+  background: linear-gradient(top,  #ffffff 0%,rgba(21,162,254,0.8) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='rgba(21,162,254,0.8)',GradientType=0 ); /* IE6-9 */
+  -webkit-box-shadow: 20px 30px rgba(0,0,0,0.2);
+  -moz-box-shadow: 20px 30px rgba(0,0,0,0.2);
+  box-shadow: 20px 30px rgba(0,0,0,0.2);
+  padding: 35px;
+  background: #FFF;
+}
+
+.folded-corner:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 0%;
+  right: 0%;
+  border-bottom: 70px solid #eee;
+  border-right: 70px solid transparent;
+  -webkit-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  -moz-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  box-shadow: -7px 7px 7px rgba(0,0,0,0.3);
+  z-index: 0;
+}
+
+.folded-corner:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  background:none;
+  border-top: 69px solid rgba(21,162,254,0.8);
+  border-left: 69px solid transparent;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.folded-corner Button {
+  border: 2px solid transparent;
+  background: #15a2fe;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 5px 40px;
+  border-radius: 3px;
+  transition: 0.25s;
+}
+
+.folded-corner Button:hover {
+  color: #fff;
+  background-color: #2682d6;
+}
+
+@media only screen and (max-width: 700px) {
+  div .Sticky {
+    position: relative;
+  }
+  .folded-corner {
+    position: relative;
+  }
+}
