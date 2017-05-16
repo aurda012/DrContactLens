@@ -8,9 +8,16 @@ if (!Meteor.isProduction) {
     email: 'admin@admin.com',
     password: 'password',
     profile: {
-      name: { first: 'Carl', last: 'Winslow' },
+      name: {first: 'Carl', last: 'Winslow'},
     },
     roles: ['admin'],
+  }, {
+    email: 'example@doctor.com',
+    password: 'password',
+    profile: {
+      name: {first: 'Patrick', last: 'Winslow'},
+    },
+    roles: ['doctor'],
   }];
 
   users.forEach(({ email, password, profile, roles }) => {

@@ -5,6 +5,7 @@ import { render } from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Meteor } from 'meteor/meteor';
 import Full from '../../ui/layouts/Full';
+import FullDoctor from '../../ui/layouts/FullDoctor';
 import Registration from '../../ui/layouts/Registration';
 import LoginLayout from '../../ui/layouts/LoginLayout';
 import Documents from '../../ui/pages/Documents.js';
@@ -20,6 +21,7 @@ import AdminRegistration from '../../ui/pages/AdminRegistration.js';
 import DoctorRegistration from '../../ui/pages/DoctorRegistration.js';
 import Subscription from '../../ui/pages/Subscriptions';
 import Users from '../../ui/pages/Users';
+import Patients from '../../ui/pages/Patients';
 
 const authenticate = (nextState, replace) => {
   if (!Meteor.loggingIn() && !Meteor.userId()) {
@@ -41,6 +43,10 @@ Meteor.startup(() => {
         <Route name="editDocument" path="/documents/:_id/edit" component={ EditDocument } onEnter={ authenticate } />
         <Route name="viewDocument" path="/documents/:_id" component={ ViewDocument } onEnter={ authenticate } />
         <Route name="subscription" path="/subscription" component={ Subscription } />
+      </Route>
+      <Route path="/" component={ FullDoctor }>
+        <Route name="Patients" path="/patients" component={ Patients } />
+        <Route name="Doctor Registration" path="/doctor-registration" component={ DoctorRegistration } />
       </Route>
       <Route path="/" component={ Registration }>
         <Route name="Admin Registration" path="/admin-registration" component={ AdminRegistration } />
