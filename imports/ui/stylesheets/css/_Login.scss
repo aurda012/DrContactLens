@@ -42,6 +42,13 @@
   background-color: #2682d6;
 }
 
+@media only screen and (max-width: 575px) {
+  div .portal-login {
+    position: relative;
+    width: 90%;
+  }
+}
+
 .blue {
   color: #15a2fe;
 }

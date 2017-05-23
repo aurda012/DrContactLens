@@ -4,7 +4,7 @@ import Plans from '../components/Plans';
 import Card from '../components/Card';
 import handleSignup from '../../modules/doctor-signup';
 
-class Signup extends React.Component {
+class DoctorRegistration extends React.Component {
   componentDidMount() {
     handleSignup({ component: this });
   }
@@ -17,20 +17,8 @@ class Signup extends React.Component {
     return (
       <div className="z-depth-2">
         <Row>
-          <Col xs={ 10 }
-               xsOffset={1}
-               sm={8}
-               smOffset={2}
-               md={8}
-               mdOffset={2}
-               lg={6}
-               lgOffset={3}
-               className="Relative folded-corner text-center"
-          >
-            <div className="login-app-title">
-              <img src={'img/loginlogo.png'} height="107" width="150" alt="logo" />
-            </div>
-            <h4 className="page-header">Doctor Registration</h4>
+          <Col xs={ 12 } sm={ 8 } smOffset={ 2 } md={ 6 } mdOffset={ 3 } className="Relative folded-corner text-center">
+            <h4 className="page-header">Account Information</h4>
             <form
               ref={ form => (this.signupForm = form) }
               onSubmit={ this.handleSubmit }
@@ -61,85 +49,6 @@ class Signup extends React.Component {
                   </FormGroup>
                 </Col>
               </Row>
-              <Row>
-                <Col xs={ 6 } sm={ 6 }>
-                  <FormGroup>
-                    <ControlLabel>Practice Name</ControlLabel>
-                    <input
-                      type="text"
-                      ref={practiceName => (this.practiceName = practiceName)}
-                      name="practiceName"
-                      placeholder="Practice Name"
-                      className="form-control"
-                    />
-                  </FormGroup>
-                </Col>
-                <Col xs={ 6 } sm={ 6 }>
-                  <FormGroup>
-                    <ControlLabel>Practice Phone Number</ControlLabel>
-                    <input
-                      type="text"
-                      ref={practicePhone => (this.practicePhone = practicePhone)}
-                      name="practicePhone"
-                      placeholder="Practice Phone Number"
-                      className="form-control"
-                    />
-                  </FormGroup>
-                </Col>
-              </Row>
-              <Row>
-                <Col xs={ 6 } sm={ 6 }>
-                  <FormGroup>
-                    <ControlLabel>Practice Address</ControlLabel>
-                    <input
-                      type="text"
-                      ref={practiceStreet => (this.practiceStreet = practiceStreet)}
-                      name="practiceStreet"
-                      placeholder="Practice Address"
-                      className="form-control"
-                    />
-                  </FormGroup>
-                </Col>
-                <Col xs={ 6 } sm={ 6 }>
-                  <FormGroup>
-                    <ControlLabel>Practice City</ControlLabel>
-                    <input
-                      type="text"
-                      ref={practiceCity => (this.practiceCity = practiceCity)}
-                      name="practiceCity"
-                      placeholder="Practice City"
-                      className="form-control"
-                    />
-                  </FormGroup>
-                </Col>
-              </Row>
-              <Row>
-                <Col xs={ 6 } sm={ 6 }>
-                  <FormGroup>
-                    <ControlLabel>Practice State</ControlLabel>
-                    <input
-                      type="text"
-                      ref={practiceState => (this.practiceState = practiceState)}
-                      name="practiceState"
-                      placeholder="Practice State"
-                      className="form-control"
-                    />
-                  </FormGroup>
-                </Col>
-                <Col xs={ 6 } sm={ 6 }>
-                  <FormGroup>
-                    <ControlLabel>Practice Zip</ControlLabel>
-                    <input
-                      type="text"
-                      ref={practiceZip => (this.practiceZip = practiceZip)}
-                      name="practiceZip"
-                      placeholder="Practice Zip"
-                      className="form-control"
-                    />
-                  </FormGroup>
-                </Col>
-              </Row>
-              <h4 className="page-header">Account Credentials</h4>
               <FormGroup>
                 <ControlLabel>Email Address</ControlLabel>
                 <input
@@ -169,10 +78,8 @@ class Signup extends React.Component {
                   <Plans />
                 </Col>
               </Row>
-              <Row>
-                <Col xs={ 12 }>
-                  <Card ref={ card => (this.card = card) } />
-                </Col>
+              <Row className="text-center">
+                <Card ref={card => (this.card = card)} />
               </Row>
               <Button type="submit" bsStyle="success" block>Sign Up</Button>
             </form>
@@ -183,4 +90,4 @@ class Signup extends React.Component {
   }
 }
 
-export default Signup;
+export default DoctorRegistration;

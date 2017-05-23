@@ -20,8 +20,12 @@ const login = () => {
       const { location } = component.props;
       if (location.state && location.state.nextPathname) {
         browserHistory.push(location.state.nextPathname);
+      } else if (Roles.userIsInRole(Meteor.userId(), 'admin')) {
+        browserHistory.push('/admin');
+      } else if (Roles.userIsInRole(Meteor.userId(), 'doctor')) {
+        browserHistory.push('/doctor');
       } else {
-        browserHistory.push('/');
+        browserHistory.push('/login');
       }
     }
   });

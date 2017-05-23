@@ -2,38 +2,38 @@
 
 import Stripe from 'stripe';
 import { Meteor } from 'meteor/meteor';
-import doctorSubscriptionDeleted from './webhooks/doctor.subscription.deleted';
-import doctorSubscriptionUpdated from './webhooks/doctor.subscription.updated';
+import customerSubscriptionDeleted from './webhooks/customer.subscription.deleted';
+import customerSubscriptionUpdated from './webhooks/customer.subscription.updated';
 import invoicePaymentSucceeded from './webhooks/invoice.payment_succeeded';
 
 const stripe = Stripe(Meteor.settings.private.stripe);
 
 export const webhooks = {
-  'doctor.subscription.deleted': doctorSubscriptionDeleted,
-  'doctor.subscription.updated': doctorSubscriptionUpdated,
+  'customer.subscription.deleted': customerSubscriptionDeleted,
+  'customer.subscription.updated': customerSubscriptionUpdated,
   'invoice.payment_succeeded': invoicePaymentSucceeded,
 };
 
 /*
- doctor = {
+ customer = {
  description: String,
  source: String, // A Stripe token from the client.
  };
  */
-export const createDoctor = doctor =>
-  stripe.doctors.create(doctor);
+export const createCustomer = customer =>
+  stripe.customers.create(customer);
 
 /*
- doctorId: String,
+ customerId: String,
  update: Object, // Contains properties to update on Stripe. For example: { source: <token> }
  */
-export const updateDoctor = (doctorId, update) =>
-  stripe.doctors.update(doctorId, update);
+export const updateCustomer = (customerId, update) =>
+  stripe.customers.update(customerId, update);
 
 /*
  subscription = {
- doctor: String, // ID of the doctor on Stripe. For example: cus_AGLTqnNknWBxKF.
- plan: String, // The ID of the plan to subscribe the doctor to. For example: large.
+ customer: String, // ID of the customer on Stripe. For example: cus_AGLTqnNknWBxKF.
+ plan: String, // The ID of the plan to subscribe the customer to. For example: large.
  };
  */
 export const createSubscription = subscription =>

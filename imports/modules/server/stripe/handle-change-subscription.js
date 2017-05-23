@@ -1,14 +1,14 @@
 /* eslint-disable consistent-return */
 
 import { Meteor } from 'meteor/meteor';
-import Doctors from '../../../api/doctors/doctors';
+import Customers from '../../../api/customers/customers';
 import { changeSubscription, createSubscription } from './index';
 
 let action;
 
-const updateDoctor = (doctorId, { id, status, plan, current_period_end }) => {
+const updateCustomer = (customerId, { id, status, plan, current_period_end }) => {
   try {
-    Doctors.update(doctorId, {
+    Customers.update(customerId, {
       $set: {
         'subscription.id': id,
         'subscription.status': status,
@@ -17,36 +17,36 @@ const updateDoctor = (doctorId, { id, status, plan, current_period_end }) => {
       },
     });
   } catch (exception) {
-    module.reject(`[handleChangeSubscription.updateDoctor] ${exception}`);
+    module.reject(`[handleChangeSubscription.updateCustomer] ${exception}`);
   }
 };
 
-const getDoctor = (userId) => {
+const getCustomer = (userId) => {
   try {
-    return Doctors.findOne({ userId });
+    return Customers.findOne({ userId });
   } catch (exception) {
-    action.reject(`[handleChangeSubscription.getDoctor] ${exception}`);
+    action.reject(`[handleChangeSubscription.getCustomer] ${exception}`);
   }
 };
 
 const handleChangeSubscription = ({ userId, newPlan }, promise) => {
   try {
     action = promise;
-    const doctor = getDoctor(userId);
-    const status = doctor.subscription.status;
+    const customer = getCustomer(userId);
+    const status = customer.subscription.status;
     const hasSubscription = status === 'active' || status === 'trialing' || status === 'cancelling';
 
     if (hasSubscription) {
-      changeSubscription(doctor.subscription.id, { plan: newPlan })
+      changeSubscription(customer.subscription.id, { plan: newPlan })
         .then(Meteor.bindEnvironment((change) => {
-          updateDoctor(doctor._id, change);
+          updateCustomer(customer._id, change);
           action.resolve();
         }))
         .catch(error => action.reject(error));
     } else {
-      createSubscription({ doctor: doctor.doctorId, plan: newPlan })
+      createSubscription({ customer: customer.customerId, plan: newPlan })
         .then(Meteor.bindEnvironment((change) => {
-          updateDoctor(doctor._id, { ...change });
+          updateCustomer(customer._id, { ...change });
           action.resolve();
         }))
         .catch(error => action.reject(error));

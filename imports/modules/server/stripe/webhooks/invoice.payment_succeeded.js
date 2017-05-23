@@ -1,7 +1,7 @@
 /* eslint-disable no-console, consistent-return */
 
 import { Meteor } from 'meteor/meteor';
-import Doctors from '../../../../api/doctors/doctors.js';
+import Customers from '../../../../api/customers/customers.js';
 import Invoices from '../../../../api/invoices/invoices.js';
 
 const getDescription = (description, metadata) => {
@@ -75,12 +75,12 @@ const invoicePaymentSucceeded = Meteor.bindEnvironment((webhook) => {
 
     const invoiceType = webhook.data.object.object; // equals 'invoice' or 'charge'
     const invoiceData = webhook.data.object;
-    const doctorId = invoiceData.doctor;
-    const doctor = Doctors.findOne({ doctorId });
+    const customerId = invoiceData.customer;
+    const customer = Customers.findOne({ customerId });
 
-    if (doctor) {
+    if (customer) {
       const user = Meteor.users.findOne(
-        { _id: doctor.userId },
+        { _id: customer.userId },
         { fields: { emails: 1, profile: 1 } }
       );
 
@@ -88,7 +88,7 @@ const invoicePaymentSucceeded = Meteor.bindEnvironment((webhook) => {
       if (invoiceType === 'charge') invoice = buildInvoiceFromCharge(user, invoiceData);
       if (invoice) Invoices.insert(invoice);
     } else {
-      console.warn(`Doctor ${invoiceData.doctor} not found.`);
+      console.warn(`Customer ${invoiceData.customer} not found.`);
     }
   } catch (exception) {
     console.warn(`[invoicePaymentSucceeded] ${exception}`);

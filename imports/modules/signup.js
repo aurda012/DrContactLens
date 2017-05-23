@@ -8,43 +8,27 @@ import './validation.js';
 let component;
 
 const getUserData = () => ({
-  email: component.emailAddress.value,
-  password: component.password.value,
-  plan: document.querySelector('[name="plan"]:checked').value,
+  email: document.querySelector('[name="emailAddress"]').value,
+  password: document.querySelector('[name="password"]').value,
   profile: {
     name: {
-      first: component.firstName.value,
-      last: component.lastName.value,
+      first: document.querySelector('[name="firstName"]').value,
+      last: document.querySelector('[name="lastName"]').value,
     },
   },
 });
 
 const signup = () => {
-  window.stripe.createToken(component.card.card)
-    .then(({ error, token }) => {
-      if (error) {
-        Bert.alert(error);
-      } else {
-        const user = getUserData();
-        const password = user.password;
-        user.password = Accounts._hashPassword(user.password);
+  const user = getUserData();
 
-        Meteor.call('signup', { source: token.id, user }, (methodError) => {
-          if (methodError) {
-            Bert.alert(methodError.reason, 'danger');
-          } else {
-            Meteor.loginWithPassword(user.email, password, (loginError) => {
-              if (loginError) {
-                Bert.alert(loginError.reason, 'danger');
-              } else {
-                Bert.alert('Welcome to Doxie!', 'success');
-                browserHistory.push('/documents');
-              }
-            });
-          }
-        });
-      }
-    });
+  Accounts.createUser(user, (error) => {
+    if (error) {
+      Bert.alert(error.reason, 'danger');
+    } else {
+      browserHistory.push('/');
+      Bert.alert('Welcome!', 'success');
+    }
+  });
 };
 
 const validate = () => {

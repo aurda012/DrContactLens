@@ -7,7 +7,23 @@ class Card extends React.Component {
   componentDidMount() {
     Stripe((stripe) => {
       this.elements = stripe.elements();
-      this.card = this.elements.create('card');
+      this.style = {
+        base: {
+          color: '#32325d',
+          lineHeight: '24px',
+          fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+          fontSmoothing: 'antialiased',
+          fontSize: '16px',
+          '::placeholder': {
+            color: '#aab7c4',
+          },
+        },
+        invalid: {
+          color: '#fa755a',
+          iconColor: '#fa755a',
+        },
+      };
+      this.card = this.elements.create('card', { style: this.style });
       this.card.mount('#card-element');
 
       this.card.addEventListener('change', ({ error }) => {
@@ -24,12 +40,11 @@ class Card extends React.Component {
   }
 
   render() {
-    return (
-      <div className="Card">
-        <div id="card-element" />
-        <label className="card-errors" />
-      </div>
-    );
+    return (<div className="Card">
+      <label htmlFor="card-element">Credit or Debit Card</label>
+      <div id="card-element" />
+      <div id="card-errors" role="alert" />
+    </div>);
   }
 }
 

@@ -1,21 +1,23 @@
+/* eslint-disable consistent-return */
+
 import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
-import Doctors from '../../../api/doctors/doctors';
-import { createDoctor, createSubscription } from './index';
+import Customers from '../../../api/customers/customers';
+import { createCustomer, createSubscription } from './index';
 
 let action;
 
-const createDoctorInDatabase = Meteor.bindEnvironment((doctor) => {
+const createCustomerInDatabase = Meteor.bindEnvironment((customer) => {
   try {
-    return Doctors.insert(doctor);
+    return Customers.insert(customer);
   } catch (exception) {
-    action.reject(`[handleSignup.createDoctorInDatabase] ${exception}`);
+    action.reject(`[handleSignup.createCustomerInDatabase] ${exception}`);
   }
 });
 
-const createSubscriptionOnStripe = ({ doctor, plan }) => {
+const createSubscriptionOnStripe = ({ customer, plan }) => {
   try {
-    return createSubscription({ doctor, plan })
+    return createSubscription({ customer, plan })
       .then(subscription => subscription)
       .catch(error => error);
   } catch (exception) {
@@ -23,16 +25,16 @@ const createSubscriptionOnStripe = ({ doctor, plan }) => {
   }
 };
 
-const createDoctorOnStripe = ({ userId, profile, email }, source) => {
+const createCustomerOnStripe = ({ userId, profile, email }, source) => {
   try {
-    return createDoctor({ email, source, metadata: profile.name })
+    return createCustomer({ email, source, metadata: profile.name })
       .then(({ id, sources }) => {
         const card = sources.data[0];
         return { card, id };
       })
       .catch(error => action.reject(error));
   } catch (exception) {
-    action.reject(`[handleSignup.createDoctorOnStripe] ${exception}`);
+    action.reject(`[handleSignup.createCustomerOnStripe] ${exception}`);
   }
 };
 
@@ -49,22 +51,14 @@ const handleSignup = (options, promise) => {
     action = promise;
     const userId = createUser(options.user);
 
-    createDoctorOnStripe({ ...options.user, userId }, options.source)
-      .then(Meteor.bindEnvironment((doctor) => {
-        createSubscriptionOnStripe({ userId, doctor: doctor.id, plan: options.user.plan })
+    createCustomerOnStripe({ ...options.user, userId }, options.source)
+      .then(Meteor.bindEnvironment((customer) => {
+        createSubscriptionOnStripe({ userId, customer: customer.id, plan: options.user.plan })
           .then(({ id, status, items, current_period_end }) => {
-            createDoctorInDatabase({
+            createCustomerInDatabase({
               userId,
-              firstName: doctor.firstName,
-              lastName: doctor.lastName,
-              practiceName: doctor.practiceName,
-              practicePhone: doctor.practicePhone,
-              practiceStreet: doctor.practiceStreet,
-              practiceCity: doctor.practiceCity,
-              practiceState: doctor.practiceState,
-              practiceZip: doctor.practiceZip,
-              doctorId: doctor.id,
-              card: { brand: doctor.card.brand, last4: doctor.card.last4 },
+              customerId: customer.id,
+              card: { brand: customer.card.brand, last4: customer.card.last4 },
               subscription: { id, status, plan: items.data[0].plan.id, current_period_end },
             });
             action.resolve();
@@ -76,6 +70,6 @@ const handleSignup = (options, promise) => {
   }
 };
 
-export default doctor =>
+export default customer =>
   new Promise((resolve, reject) =>
-    handleSignup(doctor, { resolve, reject }));
+    handleSignup(customer, { resolve, reject }));

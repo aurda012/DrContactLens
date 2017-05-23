@@ -38,7 +38,7 @@ const signup = () => {
                 Bert.alert(loginError.reason, 'danger');
               } else {
                 Bert.alert('Welcome to Dr. Contact Lens!', 'success');
-                browserHistory.push('/documents');
+                browserHistory.push('/doctor');
               }
             });
           }
@@ -56,24 +56,6 @@ const validate = () => {
       lastName: {
         required: true,
       },
-      practiceName: {
-        required: true,
-      },
-      practicePhone: {
-        required: true,
-      },
-      practiceStreet: {
-        required: true,
-      },
-      practiceCity: {
-        required: true,
-      },
-      practiceState: {
-        required: true,
-      },
-      practiceZip: {
-        required: true,
-      },
       emailAddress: {
         required: true,
         email: true,
@@ -89,24 +71,6 @@ const validate = () => {
       },
       lastName: {
         required: 'Last name?',
-      },
-      practiceName: {
-        required: 'Practice Name?',
-      },
-      practicePhone: {
-        required: 'Practice Phone?',
-      },
-      practiceStreet: {
-        required: 'Practice Street Address?',
-      },
-      practiceCity: {
-        required: 'Practice City?',
-      },
-      practiceState: {
-        required: 'Practice State?',
-      },
-      practiceZip: {
-        required: 'Practice Zip?',
       },
       emailAddress: {
         required: 'Need an email address here.',

@@ -1,7 +1,6 @@
 /* eslint-disable max-len, no-return-assign */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
 import documentEditor from '../../modules/document-editor.js';
 
@@ -43,5 +42,5 @@ export default class DocumentEditor extends React.Component {
 }
 
 DocumentEditor.propTypes = {
-  doc: PropTypes.object,
+  doc: React.PropTypes.object,
 };

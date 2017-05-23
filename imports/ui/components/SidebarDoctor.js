@@ -21,29 +21,17 @@ class SidebarDoctor extends Component {
           <img src={'img/avatars/8.jpg'} className="img-avatar" alt="Avatar"/>
           <div className="text-muted">Welcome,</div>
           <div><strong>{ userName() }</strong></div>
-
-          <div className="btn-group" role="group" aria-label="Button group WITH nested dropdown">
-            <button type="button" className="btn btn-link">
-              <i className="icon-settings"></i>
-            </button>
-            <button type="button" className="btn btn-link">
-              <i className="icon-speech"></i>
-            </button>
-            <button type="button" className="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i className="icon-user"></i>
-            </button>
-          </div>
         </div>
         <nav className="sidebar-nav">
           <ul className="nav">
             <li className="nav-item">
-              <Link to={'/patients'} className="nav-link" activeClassName="active"><i className="icon-people"></i> Patients </Link>
+              <Link to={'/doctor/patients'} className="nav-link" activeClassName="active"><i className="icon-people"></i> Patients </Link>
             </li>
             <li className="nav-item">
-              <Link to={'/patient-orders'} className="nav-link" activeClassName="active"><i className="icon-social-dropbox"></i> Orders </Link>
+              <Link to={'/doctor/orders'} className="nav-link" activeClassName="active"><i className="icon-social-dropbox"></i> Orders </Link>
             </li>
             <li className="nav-item">
-              <Link to={'/doctor-sales-reports'} className="nav-link" activeClassName="active"><i className="icon-chart"></i> Sales Reports </Link>
+              <Link to={'/doctor/sales-reports'} className="nav-link" activeClassName="active"><i className="icon-chart"></i> Sales Reports </Link>
             </li>
           </ul>
         </nav>

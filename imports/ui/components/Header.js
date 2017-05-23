@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
+import { Link, browserHistory } from 'react-router';
 import { Dropdown, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Meteor } from 'meteor/meteor';
+
+const handleLogout = () => Meteor.logout(() => browserHistory.push('/login'));
+
+const userName = () => {
+  const user = Meteor.user();
+  const name = user && user.profile ? user.profile.name : '';
+  return user ? `${name.first} ${name.last}` : '';
+};
 
 class Header extends Component {
 
@@ -66,7 +76,7 @@ class Header extends Component {
                  aria-haspopup="true"
                  aria-expanded={this.state.dropdownOpen}
               >
-                <span>John Doe</span><img src={'img/avatars/8.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
+                <span>{ userName() }</span>
               </a>
 
               <DropdownMenu className="dropdown-menu-right">
@@ -78,7 +88,7 @@ class Header extends Component {
                   <span className="badge badge-default">42</span>
                 </DropdownItem>
                 <DropdownItem>
-                  <i className="fa fa-lock" /> Logout
+                  <Link onClick={ handleLogout }><i className="fa fa-lock" /> Logout</Link>
                 </DropdownItem>
 
               </DropdownMenu>

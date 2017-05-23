@@ -128,12 +128,14 @@ div .Relative {
 @media only screen and (max-width: 575px) {
   div .Sticky {
     position: relative;
-    left: 2%;
+    left: 5%;
+    width: 90%;
   }
 
   div .Relative {
     position: relative;
-    left: 2%;
+    left: 5%;
+    width: 90%;
   }
 
   .folded-corner {
@@ -146,21 +148,22 @@ div .Relative {
 }
 
 .Relative form + p {
-  margin-top: 20px;
+  margin: 15px;
 }
 
 .Relative .Plans {
-  margin-bottom: 20px;
+  margin: 15px;
 }
 
 .Relative .Card {
-  margin-bottom: 20px;
+  margin: 15px;
 }
 
 .Card {
   background: #fafafa;
   border: 1px solid #eee;
   border-radius: 3px;
+  width: 100%;
 
   #card-element {
     padding: 15px;
@@ -178,7 +181,7 @@ div .Relative {
   }
 }
 
-.Relative .Plans {
+.Plans {
   background: #fafafa;
   border: 1px solid #eee;
   border-radius: 3px;
@@ -220,4 +223,36 @@ div .Relative {
   }
 }
 
+.Loading {
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.StripeElement {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
 

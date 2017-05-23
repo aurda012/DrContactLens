@@ -1,4 +1,11 @@
 {
+  "galaxy.meteor.com": {
+    "env": {
+      "ROOT_URL": "http://drcontactlens.meteorapp.com",
+      "MONGO_URL": "mongodb://alfredourdaneta:Caracas$12@ds145431-a0.mlab.com:45431,ds145431-a1.mlab.com:45431/drcontactlens?replicaSet=rs-ds145431",
+      "MONGO_OPLOG_URL": "mongodb://oplog-reader:Caracas$12@ds145431-a0.mlab.com:45431,ds145431-a1.mlab.com:45431/local?authSource=admin&replicaSet=rs-ds145431"
+    }
+  },
   "public": {
     "stripe": "pk_test_GvAhI4ciRc5fLLXPxr1OxzJd"
   },

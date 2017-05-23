@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { PropTypes } from 'react';
 import { composeWithTracker } from 'react-komposer';
 import { ListGroup, ListGroupItem, Row, Col, Label } from 'react-bootstrap';
 import { Meteor } from 'meteor/meteor';
@@ -40,7 +39,7 @@ InvoicesList.propTypes = {
 };
 
 const composer = (props, onData) => {
-  const subscription = Meteor.subscribe('doctor.invoices');
+  const subscription = Meteor.subscribe('customer.invoices');
   if (subscription.ready()) {
     const invoices = Invoices.find().fetch();
     onData(null, { invoices });

@@ -1,28 +1,28 @@
 /* eslint-disable consistent-return */
 
 import { Meteor } from 'meteor/meteor';
-import Doctors from '../../../api/doctors/doctors';
-import { updateDoctor } from './index';
+import Customers from '../../../api/customers/customers';
+import { updateCustomer } from './index';
 
 let action;
 
-const getDoctor = (userId) => {
+const getCustomer = (userId) => {
   try {
-    return Doctors.findOne({ userId });
+    return Customers.findOne({ userId });
   } catch (exception) {
-    action.reject(`[handleUpdatePayment.getDoctor] ${exception}`);
+    action.reject(`[handleUpdatePayment.getCustomer] ${exception}`);
   }
 };
 
 const handleUpdatePayment = ({ userId, source }, promise) => {
   try {
     action = promise;
-    const doctor = getDoctor(userId);
-    if (doctor) {
-      updateDoctor(doctor.doctorId, { source })
+    const customer = getCustomer(userId);
+    if (customer) {
+      updateCustomer(customer.customerId, { source })
         .then(Meteor.bindEnvironment(({ sources }) => {
           const card = sources.data[0];
-          Doctors.update(doctor._id, {
+          Customers.update(customer._id, {
             $set: {
               card: {
                 brand: card.brand,

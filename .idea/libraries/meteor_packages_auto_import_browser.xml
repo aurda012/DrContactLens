@@ -38,6 +38,8 @@
         <item url="file://$USER_HOME$/.meteor/packages/logging/1.1.17/web.browser/logging.js" />
         <item url="file://$USER_HOME$/.meteor/packages/logging/1.1.17/web.browser/logging_test.js" />
         <item url="file://$USER_HOME$/.meteor/packages/logging/1.1.17/web.browser/logging_cordova.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/nahue_simple-line-icons/1.0.0/web.browser/packages/nahue:simple-line-icons/lib/css/simple-line-icons.css" />
+        <item url="file://$USER_HOME$/.meteor/packages/nahue_simple-line-icons/1.0.0/web.browser/packages/nahue:simple-line-icons.js" />
         <item url="file://$USER_HOME$/.meteor/packages/templating-runtime/1.3.2/web.browser/templating.js" />
         <item url="file://$USER_HOME$/.meteor/packages/templating-runtime/1.3.2/web.browser/dynamic.js" />
         <item url="file://$USER_HOME$/.meteor/packages/templating-tools/1.1.2/web.browser/compile-tags-with-spacebars.js" />
@@ -290,9 +292,12 @@
         <item url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/misc/nontty.js" />
         <item url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/misc/only/qunit.js" />
         <item url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/require/d.coffee" />
+        <item url="file://$USER_HOME$/.meteor/packages/react-meteor-data/0.2.9/web.browser/react-meteor-data.jsx" />
         <item url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/require/require.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/react-meteor-data/0.2.9/web.browser/ReactMeteorData.jsx" />
         <item url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/misc/only/bdd.js" />
         <item url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/require/b.coffee" />
+        <item url="file://$USER_HOME$/.meteor/packages/react-meteor-data/0.2.9/web.browser/createContainer.jsx" />
         <item url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/interfaces/qunit.js" />
         <item url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/interfaces/tdd.js" />
         <item url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/require/c.js" />
@@ -433,6 +438,8 @@
       <root url="file://$USER_HOME$/.meteor/packages/logging/1.1.17/web.browser/logging.js" />
       <root url="file://$USER_HOME$/.meteor/packages/logging/1.1.17/web.browser/logging_test.js" />
       <root url="file://$USER_HOME$/.meteor/packages/logging/1.1.17/web.browser/logging_cordova.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/nahue_simple-line-icons/1.0.0/web.browser/packages/nahue:simple-line-icons/lib/css/simple-line-icons.css" />
+      <root url="file://$USER_HOME$/.meteor/packages/nahue_simple-line-icons/1.0.0/web.browser/packages/nahue:simple-line-icons.js" />
       <root url="file://$USER_HOME$/.meteor/packages/templating-runtime/1.3.2/web.browser/templating.js" />
       <root url="file://$USER_HOME$/.meteor/packages/templating-runtime/1.3.2/web.browser/dynamic.js" />
       <root url="file://$USER_HOME$/.meteor/packages/templating-tools/1.1.2/web.browser/compile-tags-with-spacebars.js" />
@@ -685,9 +692,12 @@
       <root url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/misc/nontty.js" />
       <root url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/misc/only/qunit.js" />
       <root url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/require/d.coffee" />
+      <root url="file://$USER_HOME$/.meteor/packages/react-meteor-data/0.2.9/web.browser/react-meteor-data.jsx" />
       <root url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/require/require.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/react-meteor-data/0.2.9/web.browser/ReactMeteorData.jsx" />
       <root url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/misc/only/bdd.js" />
       <root url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/require/b.coffee" />
+      <root url="file://$USER_HOME$/.meteor/packages/react-meteor-data/0.2.9/web.browser/createContainer.jsx" />
       <root url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/interfaces/qunit.js" />
       <root url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/interfaces/tdd.js" />
       <root url="file://$USER_HOME$/.meteor/packages/practicalmeteor_mocha/2.4.5_6/web.browser/test/acceptance/require/c.js" />
