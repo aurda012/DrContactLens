@@ -10,8 +10,7 @@ let action;
 
 const insertOrder = Meteor.bindEnvironment((order) => {
   try {
-    const orderPlaced = Orders.insert(order);
-    return orderPlaced;
+    Orders.insert(order);
   } catch (exception) {
     action.reject(`[createOrder.insertOrder] ${exception}`);
   }
@@ -23,7 +22,7 @@ const createOrder = ({ customer, patient, doctor, dateCreated, stripeAmount, qua
 
     createCharge({ amount: stripeAmount, currency: 'usd', customer, destination: { account: doctor.accountId } })
     .then(() => {
-      const placedOrder = insertOrder({
+      insertOrder({
         ownerId: patient._id,
         doctorId: patient.owner,
         customerId: customer,
