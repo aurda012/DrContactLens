@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
+import { Meteor } from 'meteor/meteor';
+import { composeWithTracker } from 'react-komposer';
+import PropTypes from 'prop-types';
+import Orders from '../../api/orders/orders';
 import { Bar, Line } from 'react-chartjs-2';
+import moment from 'moment';
 
 const brandPrimary =  '#20a8d8';
 const brandSuccess =  '#4dbd74';
@@ -20,78 +25,85 @@ function convertHex(hex,opacity) {
   return result;
 }
 
-//Random Numbers
-function random(min,max) {
-  return Math.floor(Math.random()*(max-min+1)+min);
+function optimalMaxValue(maxValue, mostTicks) {
+  const minimum = maxValue / mostTicks;
+  const magnitude = Math.pow(10, Math.floor(Math.log(minimum) / Math.log(10)));
+  const residual = minimum / magnitude;
+  let tick;
+  if (residual > 5) {
+    tick = 10 * magnitude;
+  } else if (residual > 2) {
+    tick = 5 * magnitude;
+  } else if (residual > 1) {
+    tick = 2 * magnitude;
+  } else {
+    tick = magnitude;
+  }
+  return (tick * mostTicks);
 }
 
-var elements = 27;
-var data1 = [];
-var data2 = [];
-var data3 = [];
-
-for (var i = 0; i <= elements; i++) {
-  data1.push(random(50, 10000));
-  data2.push(random(80, 8000));
-  data3.push(random(60, 10000));
+function optimalScale(range) {
+  let optimalMax = range * 2;
+  let optimalTicks;
+  for (let i = 5; i <= 10; i += 1) {
+    const tmpMaxValue = optimalMaxValue(range, i);
+    if ((optimalMax > tmpMaxValue) && (tmpMaxValue > (range + (range * 0.05)))) {
+      optimalMax = tmpMaxValue;
+      optimalTicks = i;
+    }
+  }
+  return {
+    optimalMax,
+    optimalStep: optimalMax / optimalTicks,
+  };
 }
 
-const mainChart = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+const mainChart = (data1) => ({
+  labels: ['Sales Today', 'Sales This Week', 'Sales This Month', 'Total Sales'],
   datasets: [
-    {
+     {
       label: 'Total Sales',
       backgroundColor: convertHex(brandInfo, 10),
       borderColor: brandInfo,
       pointHoverBackgroundColor: '#fff',
       borderWidth: 2,
-      data: data1,
-    },
-    {
-      label: 'Doctor Commissions',
-      backgroundColor: convertHex(brandYellow, 10),
-      borderColor: brandYellow,
-      pointHoverBackgroundColor: '#fff',
-      borderWidth: 2,
-      data: data2,
-    },
-    {
-      label: 'DCL Revenue',
-      backgroundColor: convertHex(brandSuccess, 10),
-      borderColor: brandSuccess,
-      pointHoverBackgroundColor: '#fff',
-      borderWidth: 2,
-      data: data3,
+      data: [data1.today, data1.week, data1.month, data1.total],
     },
   ]
-}
+})
 
-const mainChartOpts = {
-  maintainAspectRatio: false,
-  legend: {
-    display: true,
-  },
-  scales: {
-    xAxes: [{
-      gridLines: {
-        drawOnChartArea: false,
+const mainChartOpts = (data1) => {
+  const max = Math.max(
+    data1.today, data1.week, data1.month, data1.total
+  )
+  const optiScale = optimalScale(max)
+  return {
+    maintainAspectRatio: false,
+    legend: {
+      display: true,
+    },
+    scales: {
+      xAxes: [{
+        gridLines: {
+          drawOnChartArea: false,
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          maxTicksLimit: 5,
+          stepSize: optiScale.optimalStep,
+          max: optiScale.optimalMax,
+        }
+      }]
+    },
+    elements: {
+      point: {
+        radius: 0,
+        hitRadius: 10,
+        hoverRadius: 4,
+        hoverBorderWidth: 3,
       }
-    }],
-    yAxes: [{
-      ticks: {
-        beginAtZero: true,
-        maxTicksLimit: 5,
-        stepSize: Math.ceil(10000 / 10),
-        max: 10000,
-      }
-    }]
-  },
-  elements: {
-    point: {
-      radius: 0,
-      hitRadius: 10,
-      hoverRadius: 4,
-      hoverBorderWidth: 3,
     }
   }
 }
@@ -114,6 +126,50 @@ class SalesReports extends Component {
   }
 
   render() {
+    const { orders } = this.props;
+
+    const chartData = {
+      today: orders.reduce((prev, cur) => {
+        if (
+          moment(cur.createdAt)
+            .startOf('day')
+            .diff(
+              moment().startOf('day'), 'seconds'
+            ) >= 0
+        ) {
+          return prev + cur.orderTotal;
+        }
+        return prev;
+      }, 0),
+      week: orders.reduce((prev, cur) => {
+        if (
+          moment(cur.createdAt)
+            .startOf('week')
+            .diff(
+              moment().startOf('week'), 'seconds'
+            ) >= 0
+        ) {
+          return prev + cur.orderTotal;
+        }
+        return prev;
+      }, 0),
+      month: orders.reduce((prev, cur) => {
+        if (
+          moment(cur.createdAt)
+            .startOf('month')
+            .diff(
+              moment().startOf('month'), 'seconds'
+            ) >= 0
+        ) {
+          return prev + cur.orderTotal;
+        }
+        return prev;
+      }, 0),
+      total: orders.reduce((prev, cur) => (
+        prev + cur.orderTotal
+      ), 0),
+    };
+
     return (
       <div className="animated fadeIn">
 
@@ -125,7 +181,7 @@ class SalesReports extends Component {
               </div>
               <div className="col-md-12">
                 <div className="chart-wrapper" style={{height: 600 + 'px', marginTop: 40 + 'px', marginBottom: 40 + 'px' }}>
-                  <Bar data={mainChart} options={mainChartOpts} height={600}/>
+                  <Bar data={mainChart(chartData)} options={mainChartOpts(chartData)} height={600}/>
                 </div>
               </div>
             </div>
@@ -136,4 +192,17 @@ class SalesReports extends Component {
   }
 }
 
-export default SalesReports;
+SalesReports.propTypes = {
+  orders: PropTypes.array,
+};
+
+const composer = (params, onData) => {
+  const subscription = Meteor.subscribe('orders');
+  if (subscription.ready()) {
+    const orders = Orders.find({}, { orderTotal: 1 }).fetch();
+    onData(null, { orders });
+  }
+};
+
+export default composeWithTracker(composer)(SalesReports);
+
