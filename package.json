@@ -101,6 +101,7 @@
     "react-table": "^6.0.5",
     "react-virtualized-select": "^3.0.1",
     "reactstrap": "4.5.0",
+    "request-promise": "^4.2.1",
     "simpl-schema": "^0.2.3",
     "smartadmin-plugins": "^1.0.15",
     "stripe": "^4.15.1",

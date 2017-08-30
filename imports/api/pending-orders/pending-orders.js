@@ -60,6 +60,14 @@ const PendingOrdersSchema = new SimpleSchema({
     type: String,
     label: 'Total amount for order.',
   },
+  seriesLeft: {
+    type: String,
+    label: 'Series ID of the left Product.',
+  },
+  seriesRight: {
+    type: String,
+    label: 'Series ID of the right Product.',
+  },
 });
 
 PendingOrders.schema = PendingOrdersSchema;

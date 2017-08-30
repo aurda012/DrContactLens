@@ -13,13 +13,20 @@ const getOrderData = () => ({
   insurance: component.state.insurance,
 });
 
+const productData = () => ({
+  seriesLeft: component.props.catalog[component.state.currentCatalogIdL].SER_ID,
+  seriesRight: component.props.catalog[component.state.currentCatalogIdR].SER_ID,
+});
+
 const checkout = async () => {
   component.setProcessingState({ processing: true });
   const order = getOrderData();
+  const product = productData();
   order.source = await window.stripe.createToken(component.card.card, { currency: 'USD' });
 
   Meteor.call('checkout', {
     order,
+    product,
   }, (methodError) => {
     if (methodError) {
       component.setProcessingState({ processing: false });

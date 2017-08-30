@@ -64,6 +64,8 @@ const handleCheckout = (options, promise) => {
             brandRight: patient.contactBrandRight,
             brandLeft: patient.contactBrandLeft,
             orderTotal: options.order.orderTotal,
+            seriesLeft: options.product.seriesLeft,
+            seriesRight: options.product.seriesRight,
           });
           sendEmailNotification('pendingOrderPlaced', { to: doctor.email });
           createNotification('newPendingOrder', { orderId, recipient: doctor.userId, triggeredBy: patient._id });
@@ -71,7 +73,7 @@ const handleCheckout = (options, promise) => {
     } else {
       createCustomerOnStripe({ email: patient.emailAddress }, cardToCharge)
       .then(Meteor.bindEnvironment((customer) => {
-        placeOrder({ customer: customer.id, patient, doctor, dateCreated, stripeAmount, quantRight, quantLeft });
+        placeOrder({ customer: customer.id, patient, doctor, dateCreated, stripeAmount, quantRight, quantLeft, seriesLeft: options.product.seriesLeft, seriesRight: options.product.seriesRight });
       }));
     }
   } catch (exception) {

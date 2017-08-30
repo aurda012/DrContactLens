@@ -38,7 +38,7 @@ const handlePending = (options, promise) => {
     const insuranceAmountInCents = (options.insuranceAmount * 100);
     const stripeAmount = ((order.orderTotal * 100) - insuranceAmountInCents);
 
-    placeOrder({ customer: order.customerId, patient, doctor, dateCreated, stripeAmount, quantRight: order.quantityRight, quantLeft: order.quantityLeft })
+    placeOrder({ customer: order.customerId, patient, doctor, dateCreated, stripeAmount, quantRight: order.quantityRight, quantLeft: order.quantityLeft, seriesLeft: options.product.seriesLeft, seriesRight: options.product.seriesRight })
     .then(Meteor.bindEnvironment(() => {
       deletePendingOrder(options.orderId);
     }))
