@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { composeWithTracker } from 'react-komposer';
 import Orders from '../../api/orders/orders';
+import moment from 'moment';
 import { Bar, Line } from 'react-chartjs-2';
 
 const brandPrimary =  '#20a8d8';
@@ -40,6 +41,39 @@ function random(min,max) {
 //   data3.push(random(60, 10000));
 // }
 
+function optimalMaxValue(maxValue, mostTicks) {
+  const minimum = maxValue / mostTicks;
+  const magnitude = Math.pow(10, Math.floor(Math.log(minimum) / Math.log(10)));
+  const residual = minimum / magnitude;
+  let tick;
+  if (residual > 5) {
+    tick = 10 * magnitude;
+  } else if (residual > 2) {
+    tick = 5 * magnitude;
+  } else if (residual > 1) {
+    tick = 2 * magnitude;
+  } else {
+    tick = magnitude;
+  }
+  return (tick * mostTicks);
+}
+
+function optimalScale(range) {
+  let optimalMax = range * 2;
+  let optimalTicks;
+  for (let i = 5; i <= 10; i += 1) {
+    const tmpMaxValue = optimalMaxValue(range, i);
+    if ((optimalMax > tmpMaxValue) && (tmpMaxValue > (range + (range * 0.05) ))) {
+      optimalMax = tmpMaxValue;
+      optimalTicks = i;
+    }
+  }
+  return {
+    optimalMax,
+    optimalStep: optimalMax / optimalTicks,
+  };
+}
+
 const mainChart = (data1) => ({
   labels: ['Sales Today', 'Sales This Week', 'Sales This Month', 'Total Sales'],
   datasets: [
@@ -49,37 +83,43 @@ const mainChart = (data1) => ({
       borderColor: brandInfo,
       pointHoverBackgroundColor: '#fff',
       borderWidth: 2,
-      data: data1,
+      data: [data1.today, data1.week, data1.month, data1.total],
     },
   ]
 });
 
-const mainChartOpts = {
-  maintainAspectRatio: false,
-  legend: {
-    display: true,
-  },
-  scales: {
-    xAxes: [{
-      gridLines: {
-        drawOnChartArea: false,
+const mainChartOpts = (data1) => {
+  const max = Math.max(
+    data1.today, data1.week, data1.month, data1.total
+  )
+  const optiScale = optimalScale(max);
+  return {
+    maintainAspectRatio: false,
+    legend: {
+      display: true,
+    },
+    scales: {
+      xAxes: [{
+        gridLines: {
+          drawOnChartArea: false,
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          maxTicksLimit: 5,
+          stepSize: optiScale.optimalStep,
+          max: optiScale.optimalMax,
+        }
+      }]
+    },
+    elements: {
+      point: {
+        radius: 0,
+        hitRadius: 10,
+        hoverRadius: 4,
+        hoverBorderWidth: 3,
       }
-    }],
-    yAxes: [{
-      ticks: {
-        beginAtZero: true,
-        maxTicksLimit: 5,
-        stepSize: Math.ceil(5000 / 10),
-        max: 5000,
-      }
-    }]
-  },
-  elements: {
-    point: {
-      radius: 0,
-      hitRadius: 10,
-      hoverRadius: 4,
-      hoverBorderWidth: 3,
     }
   }
 }
@@ -107,13 +147,51 @@ class DoctorSalesReports extends Component {
 
     // var sum = orders.orderTotal.reduce(add, 0);
 
-    console.log(orders);
-
     function add(a, b) {
       return a + b;
     }
 
-    const data = [323, 753, 1356, 4263];
+    const chartData = {
+      today: orders.reduce((prev, cur) => {
+        if (
+          moment(cur.createdAt)
+            .startOf('day')
+            .diff(
+              moment().startOf('day'), 'seconds'
+            ) >= 0
+        ) {
+          return prev + cur.orderTotal;
+        }
+        return prev;
+      }, 0),
+      week: orders.reduce((prev, cur) => {
+        if (
+          moment(cur.createdAt)
+            .startOf('week')
+            .diff(
+              moment().startOf('week'), 'seconds'
+            ) >= 0
+        ) {
+          return prev + cur.orderTotal;
+        }
+        return prev;
+      }, 0),
+      month: orders.reduce((prev, cur) => {
+        if (
+          moment(cur.createdAt)
+            .startOf('month')
+            .diff(
+              moment().startOf('month'), 'seconds'
+            ) >= 0
+        ) {
+          return prev + cur.orderTotal;
+        }
+        return prev;
+      }, 0),
+      total: orders.reduce((prev, cur) => (
+        prev + cur.orderTotal
+      ), 0),
+    }
 
     return (
       <div className="animated fadeIn">
@@ -126,7 +204,7 @@ class DoctorSalesReports extends Component {
               </div>
               <div className="col-md-12">
                 <div className="chart-wrapper" style={{ height: 600 + 'px', marginTop: 40 + 'px', marginBottom: 40 + 'px' }}>
-                  <Bar data={mainChart(orders)} options={mainChartOpts} height={600}/>
+                  <Bar data={mainChart(chartData)} options={mainChartOpts(chartData)} height={600}/>
                 </div>
               </div>
             </div>
