@@ -1,0 +1,34 @@
+.sidebar .sidebar-nav a.nav-link, .sidebar .sidebar-nav .navbar a.dropdown-toggle, .navbar .sidebar .sidebar-nav a.dropdown-toggle {
+  font-size: 16px;
+}
+
+.sidebar .nav .nav-item .nav-link i, .sidebar .nav .nav-item .navbar .dropdown-toggle i, .navbar .sidebar .nav .nav-item .dropdown-toggle i {
+  font-size: 16px;
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  header.navbar .navbar-nav a.nav-link span, header.navbar .navbar-nav a.dropdown-toggle span {
+    visibility: hidden;
+    font-size: 0;
+    margin-left: 0px;
+  }
+
+  header.navbar .nav-item .nav-link, header.navbar .nav-item .dropdown-toggle {
+    font-size: 20px;
+    border-left: 1px solid #d1d4d7;
+  }
+
+  header.navbar .nav-item .nav-link, header.navbar .nav-item .dropdown-toggle::after {
+    margin-right: 11px;
+  }
+}
+
+header.app-header.navbar {
+  margin-bottom: 0;
+}
+
+header.navbar .navbar-brand {
+  height: 54px;
+  width: 224px;
+}

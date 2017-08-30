@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
-import { Button } from 'react-bootstrap';
-import ContactsTable from '../components/ContactsTable';
+import ContactsTable from '../components/Tables/ContactsTable';
 
 const Contacts = () => (
   <div className="animated fadeIn">
@@ -9,16 +7,9 @@ const Contacts = () => (
       <div className="col-lg-12">
         <div className="card">
           <div className="card-header">
-            <i className="fa fa-align-justify"></i> Contacts
+            <h4 style={{ margin: '5px' }}><strong>Contacts</strong></h4>
           </div>
           <div className="card-block">
-            <Link to="/admin/contacts/new">
-              <Button
-                bsStyle="success"
-                className="pull-right"
-                style={{margin: '10px'}}
-              >New Contact</Button>
-            </Link>
             <ContactsTable />
           </div>
         </div>

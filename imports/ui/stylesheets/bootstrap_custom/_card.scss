@@ -1,8 +1,14 @@
 .card {
   margin-bottom: 1.5 * $spacer-y;
+  border-radius: 10px;
 }
 
 .card-header {
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #04a5ff;
+  color: #ffffff;
 
   i.icon-bg {
     display: inline-block;

@@ -2,6 +2,7 @@
 
 import { browserHistory } from 'react-router';
 import { Meteor } from 'meteor/meteor';
+import { Roles } from 'meteor/alanning:roles';
 import { Bert } from 'meteor/themeteorchef:bert';
 import './validation.js';
 

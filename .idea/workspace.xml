@@ -1,287 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="643257a5-8dc3-4499-85f6-263f70b51e4c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/contacts/contacts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/contacts/methods.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/contacts/server/publications.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/contact-editor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/discount-editor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/solution-editor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/validate-document-quota.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/startup/server/roles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/ContactEditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/ContactsTable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/DiscountEditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/DiscountsTable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Loading.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/PatientEditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/PatientsTable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/SolutionEditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/SolutionsTable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/containers/DocumentsList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/containers/EditDocument.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/containers/ViewDocument.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/Contacts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/Discounts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/EditContact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/EditDiscount.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/EditPatient.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/EditSolution.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/NewContact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/NewDiscount.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/NewPatient.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/NewSolution.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/Orders.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/Solutions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/ViewContact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/ViewDiscount.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/ViewPatient.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/ViewSolution.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/api/doctors/doctors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/api/doctors/server/methods.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/api/doctors/server/publications.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/modules/patient-owner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/handle-cancel-subscription.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/handle-change-subscription.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/handle-signup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/handle-update-payment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/handleManagedAccount.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/webhooks/doctor.subscription.deleted.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/webhooks/doctor.subscription.updated.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/webhooks/invoice.payment_succeeded.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/startup/client/plugins.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/fontawesome/css/font-awesome.min.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/fontawesome/css/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/fontawesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/fontawesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/fontawesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/fontawesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/fontawesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/fontawesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /Simple-Line-Icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /Simple-Line-Icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /Simple-Line-Icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /Simple-Line-Icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /Simple-Line-Icons.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-filetypes-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-filetypes-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-filetypes-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-filetypes-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-filetypes-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-social-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-social-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-social-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-social-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts /glyphicons-social-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/jquery-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/l20n.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/perfect-scrollbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/rubix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/datatables/responsive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/changelog.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/agenda-views.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/basic-views.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/external-dragging.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/gcal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/json.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/json/events.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/languages.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/php/get-events.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/php/get-timezones.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/php/utils.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/selectable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/theme.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/demos/timezones.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/fullcalendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/fullcalendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/fullcalendar.print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/gcal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang-all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/ar-ma.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/ar-sa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/de-at.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/en-au.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/en-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/sr-cyrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lang/zh-tw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-icons_2694e8_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-icons_2e83ff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-icons_3d80b3_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-icons_72a7cf_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/images/ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/cupertino/jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/jquery-ui.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/lib/moment.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/fullcalendar/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/ion.rangeSlider/ion.rangeSlider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jcrop/color.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jcrop/jcrop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/prism/prism.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/component.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/release.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2-bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2-spinner.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_en.js.template" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_ka.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_mk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_pt-PT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_rs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_ug-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2_locale_zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/select2/select2x2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/timeline/timeline.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/pages/DoctorSalesReport.js" afterPath="$PROJECT_DIR$/imports/ui/pages/SalesReport.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/pages/Subscriptions.js" afterPath="$PROJECT_DIR$/imports/ui/pages/Subscription.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/icons-16.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/icons-16.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/icons-16.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/catalog/catalog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/data/states.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/messages/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/notifications/notifications.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/notifications/server/publications.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/orders/server/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/patients/server/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/pending-orders/pending-orders.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/pending-orders/server/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/pending-orders/server/publications.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/approve-insurance.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/capitalize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/checkout.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/date-format.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/modals.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/patient-email.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/server/create-notification.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/server/handle-patient-email.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/server/send-email-notifications.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/server/stripe/handle-checkout.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/server/stripe/handle-pending.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/server/stripe/place-order.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/server/template-to-html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/modules/xml-http-request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/startup/server/accounts/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/startup/server/email.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/DateField/DateField.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Editors/ContactEditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Editors/DiscountEditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Editors/PatientEditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Editors/SolutionEditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Modals/InsuranceApprovalModal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Modals/Modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Modals/SendEmail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Modals/TermsOfService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Notifications/Notifications.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/PatientCheckout/PatientCheckout.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Plans/Plans.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Tables/ContactsTable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Tables/DiscountsTable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Tables/PatientsTableDoctor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Tables/PendingOrdersTable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/Tables/SolutionsTable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/layouts/Portal/PortalAdmin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/layouts/Portal/PortalDoctor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/layouts/Public/Public.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/Doctors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/OrderHistory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/PatientEmail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/RecoverEmail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/css/_DateField.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/css/_Portal-Responsive.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/css/_Table.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/email-templates/DoctorWelcome.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/email-templates/standard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/dataTables.bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.dataTables.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/api/contacts/contacts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/api/contacts/methods.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/components/ContactEditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/components/ContactsTable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/components/DiscountEditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/components/DiscountsTable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/components/DocumentEditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/components/DocumentsList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/components/PatientEditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/components/PatientsTable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/components/Plans.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/components/SolutionEditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/components/SolutionsTable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/containers/DocumentsList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/containers/EditDocument.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/containers/ViewDocument.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/layouts/Full.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/layouts/FullDoctor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/pages/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/pages/EditDocument.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/pages/NewDocument.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/pages/Users.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/pages/ViewDocument.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apple-touch-icon-precomposed.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/api/contacts/server/publications.js" afterPath="$PROJECT_DIR$/imports/api/catalog/server/publications.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/startup/server/roles.js" afterPath="$PROJECT_DIR$/imports/api/catalog/methods.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/components/Card.js" afterPath="$PROJECT_DIR$/imports/ui/components/Card/Card.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/components/Footer.js" afterPath="$PROJECT_DIR$/imports/ui/components/Footers/Footer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/components/Header.js" afterPath="$PROJECT_DIR$/imports/ui/components/Headers/HeaderDoctor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/components/Invoices.js" afterPath="$PROJECT_DIR$/imports/ui/components/Invoices/Invoices.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/components/Loading.js" afterPath="$PROJECT_DIR$/imports/ui/components/Loading/Loading.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/components/Sidebar.js" afterPath="$PROJECT_DIR$/imports/ui/components/Sidebars/SidebarAdmin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/components/SidebarDoctor.js" afterPath="$PROJECT_DIR$/imports/ui/components/Sidebars/SidebarDoctor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/components/SimpleFooter.js" afterPath="$PROJECT_DIR$/imports/ui/components/Footers/SimpleFooter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/layouts/LoginLayout.js" afterPath="$PROJECT_DIR$/imports/ui/layouts/Public/Login.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/layouts/Registration.js" afterPath="$PROJECT_DIR$/imports/ui/layouts/Public/Registration.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/pages/Orders.js" afterPath="$PROJECT_DIR$/imports/ui/pages/PendingOrders.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.png" afterPath="$PROJECT_DIR$/public/favicon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/favicon.png" afterPath="$PROJECT_DIR$/public/img/favicon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/base.iml" afterPath="$PROJECT_DIR$/.idea/base.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/.finished-upgraders" afterPath="$PROJECT_DIR$/.meteor/.finished-upgraders" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/release" afterPath="$PROJECT_DIR$/.meteor/release" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/documents/documents.js" afterPath="$PROJECT_DIR$/imports/api/documents/documents.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/documents/methods.js" afterPath="$PROJECT_DIR$/imports/api/documents/methods.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/documents/server/publications.js" afterPath="$PROJECT_DIR$/imports/api/documents/server/publications.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/customers/customers.js" afterPath="$PROJECT_DIR$/imports/api/customers/customers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/customers/server/methods.js" afterPath="$PROJECT_DIR$/imports/api/customers/server/methods.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/patients/methods.js" afterPath="$PROJECT_DIR$/imports/api/patients/methods.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/patients/patients.js" afterPath="$PROJECT_DIR$/imports/api/patients/patients.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/patients/server/publications.js" afterPath="$PROJECT_DIR$/imports/api/patients/server/publications.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/modules/cents-to-dollars.js" afterPath="$PROJECT_DIR$/imports/modules/cents-to-dollars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/modules/contact-editor.js" afterPath="$PROJECT_DIR$/imports/modules/contact-editor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/modules/dates.js" afterPath="$PROJECT_DIR$/imports/modules/dates.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/modules/discount-editor.js" afterPath="$PROJECT_DIR$/imports/modules/discount-editor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/modules/doctor-signup.js" afterPath="$PROJECT_DIR$/imports/modules/doctor-signup.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/modules/login.js" afterPath="$PROJECT_DIR$/imports/modules/login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/modules/patient-editor.js" afterPath="$PROJECT_DIR$/imports/modules/patient-editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/modules/signup.js" afterPath="$PROJECT_DIR$/imports/modules/signup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/handle-signup.js" afterPath="$PROJECT_DIR$/imports/modules/server/stripe/handle-signup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/index.js" afterPath="$PROJECT_DIR$/imports/modules/server/stripe/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/modules/server/stripe/webhooks/invoice.payment_succeeded.js" afterPath="$PROJECT_DIR$/imports/modules/server/stripe/webhooks/invoice.payment_succeeded.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/client/index.js" afterPath="$PROJECT_DIR$/imports/startup/client/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/client/routes.js" afterPath="$PROJECT_DIR$/imports/startup/client/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/server/accounts/email-templates.js" afterPath="$PROJECT_DIR$/imports/startup/server/accounts/email-templates.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/server/api.js" afterPath="$PROJECT_DIR$/imports/startup/server/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/server/browser-policy.js" afterPath="$PROJECT_DIR$/imports/startup/server/browser-policy.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/server/fixtures.js" afterPath="$PROJECT_DIR$/imports/startup/server/fixtures.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/Card.js" afterPath="$PROJECT_DIR$/imports/ui/components/Card.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/DocumentEditor.js" afterPath="$PROJECT_DIR$/imports/ui/components/DocumentEditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/DocumentsList.js" afterPath="$PROJECT_DIR$/imports/ui/components/DocumentsList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/Header.js" afterPath="$PROJECT_DIR$/imports/ui/components/Header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/Invoices.js" afterPath="$PROJECT_DIR$/imports/ui/components/Invoices.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/Plans.js" afterPath="$PROJECT_DIR$/imports/ui/components/Plans.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/Sidebar.js" afterPath="$PROJECT_DIR$/imports/ui/components/Sidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/SidebarDoctor.js" afterPath="$PROJECT_DIR$/imports/ui/components/SidebarDoctor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/server/index.js" afterPath="$PROJECT_DIR$/imports/startup/server/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/Contacts.js" afterPath="$PROJECT_DIR$/imports/ui/pages/Contacts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/Discounts.js" afterPath="$PROJECT_DIR$/imports/ui/pages/Discounts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/DoctorRegistration.js" afterPath="$PROJECT_DIR$/imports/ui/pages/DoctorRegistration.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/Documents.js" afterPath="$PROJECT_DIR$/imports/ui/pages/Documents.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/EditDocument.js" afterPath="$PROJECT_DIR$/imports/ui/pages/EditDocument.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/EditContact.js" afterPath="$PROJECT_DIR$/imports/ui/pages/EditContact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/EditDiscount.js" afterPath="$PROJECT_DIR$/imports/ui/pages/EditDiscount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/EditPatient.js" afterPath="$PROJECT_DIR$/imports/ui/pages/EditPatient.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/EditSolution.js" afterPath="$PROJECT_DIR$/imports/ui/pages/EditSolution.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/Login.js" afterPath="$PROJECT_DIR$/imports/ui/pages/Login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/NewContact.js" afterPath="$PROJECT_DIR$/imports/ui/pages/NewContact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/NewDiscount.js" afterPath="$PROJECT_DIR$/imports/ui/pages/NewDiscount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/NewPatient.js" afterPath="$PROJECT_DIR$/imports/ui/pages/NewPatient.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/NewSolution.js" afterPath="$PROJECT_DIR$/imports/ui/pages/NewSolution.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/Patients.js" afterPath="$PROJECT_DIR$/imports/ui/pages/Patients.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/RecoverPassword.js" afterPath="$PROJECT_DIR$/imports/ui/pages/RecoverPassword.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/ResetPassword.js" afterPath="$PROJECT_DIR$/imports/ui/pages/ResetPassword.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/SalesReport.js" afterPath="$PROJECT_DIR$/imports/ui/pages/SalesReport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/Solutions.js" afterPath="$PROJECT_DIR$/imports/ui/pages/Solutions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/Subscription.js" afterPath="$PROJECT_DIR$/imports/ui/pages/Subscription.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/ViewContact.js" afterPath="$PROJECT_DIR$/imports/ui/pages/ViewContact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/ViewDiscount.js" afterPath="$PROJECT_DIR$/imports/ui/pages/ViewDiscount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/ViewPatient.js" afterPath="$PROJECT_DIR$/imports/ui/pages/ViewPatient.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/ViewSolution.js" afterPath="$PROJECT_DIR$/imports/ui/pages/ViewSolution.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/_custom-variables.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/_custom-variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/_custom.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/_custom.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/bootstrap_custom/_card.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/bootstrap_custom/_card.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/bootstrap_custom/_modal.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/bootstrap_custom/_modal.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/bootstrap_src/_card.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/bootstrap_src/_card.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/bootstrap_src/_variables.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/bootstrap_src/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/core/_layout.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/core/_layout.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/core/navigation/_sidebar.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/core/navigation/_sidebar.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/css/_Login.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/css/_Login.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/css/_Signup.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/css/_Signup.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/css/_Subscriptions.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/css/_Subscriptions.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/style.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/vendors/_vendors.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/vendors/_vendors.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/vendors/datatables/datatables.scss" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/vendors/datatables/datatables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings-development.json" afterPath="$PROJECT_DIR$/settings-development.json" />
     </list>
@@ -296,10 +183,91 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="BetaPortal" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="roles.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imports/startup/server/roles.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DoctorRegistration.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/pages/DoctorRegistration.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Plans.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/components/Plans/Plans.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doctor-signup.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/modules/doctor-signup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="handle-checkout.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/handle-checkout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="78" column="3" lean-forward="true" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="place-order.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/place-order.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-107">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoctorSalesReport.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/pages/DoctorSalesReport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2166">
+              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="handle-signup.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/handle-signup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/pages/Login.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -308,69 +276,101 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/startup/client/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SalesReport.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/pages/SalesReport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>PropTypes</find>
-      <find>future</find>
-      <find>&quot;</find>
-      <find>brandName</find>
-      <find>body</find>
-      <find>''</find>
-      <find>inserted</find>
-      <find>document</find>
-      <find>pat</find>
-      <find>9999</find>
-      <find>99999</find>
-      <find>h4</find>
-      <find>admin</find>
-      <find>admin/</find>
-      <find>/</find>
-      <find>/p</find>
-      <find>/pa</find>
-      <find>false</find>
-      <find>lens-solution'</find>
-      <find>lenssolution</find>
+      <find>InsuranceApprova</find>
+      <find>InsuranceApproval</find>
+      <find>Right</find>
+      <find>fon</find>
+      <find>font-fa</find>
+      <find>font-famil</find>
+      <find>font-family</find>
+      <find>welcome to</find>
+      <find>Documents</find>
+      <find>Load</find>
+      <find>Loading</find>
+      <find>card</find>
+      <find>patientE</find>
+      <find>pa</find>
+      <find>patie</find>
+      <find>patien</find>
       <find>patient</find>
-      <find>manufacturer</find>
-      <find>wholesalePrice</find>
-      <find>contact</find>
-      <find>solution</find>
-      <find>doctor</find>
-      <find>/patients</find>
-      <find>d</find>
-      <find>do</find>
-      <find>doxie</find>
+      <find>patientEm</find>
+      <find>patientEma</find>
+      <find>patientEmail</find>
+      <find>customers</find>
+      <find>or</find>
+      <find>orders.approve</find>
+      <find>pl</find>
+      <find>plan</find>
+      <find>import</find>
+      <find>import S</find>
+      <find>import</find>
+      <find>import st</find>
+      <find>import str</find>
     </findStrings>
     <replaceStrings>
-      <replace>doctor</replace>
-      <replace>import React from 'react';import { PropTypes } from 'prop-types';</replace>
-      <replace>patients</replace>
-      <replace>Right Eye -</replace>
-      <replace>isOwner</replace>
-      <replace>lastName</replace>
-      <replace>pat</replace>
+      <replace>prop</replace>
+      <replace>orderDate</replace>
+      <replace>patientName</replace>
+      <replace>billingStatus</replace>
+      <replace>d</replace>
+      <replace>class</replace>
+      <replace>&lt;span className=&quot;btn btn-info&quot;&gt;View&lt;/span&gt;</replace>
+      <replace>manage</replace>
+      <replace>view</replace>
+      <replace>'view'</replace>
+      <replace>ApproveInsuranceModal</replace>
+      <replace>PRD_COLOR_ID</replace>
+      <replace>PRD_POWER: '</replace>
+      <replace>LoadXmlDoc</replace>
+      <replace>catalog</replace>
+      <replace>{</replace>
+      <replace>'1' }</replace>
+      <replace>},</replace>
+      <replace>',</replace>
       <replace>'</replace>
-      <replace>_id</replace>
-      <replace>brandName</replace>
-      <replace>contact</replace>
-      <replace>'0.5'</replace>
-      <replace>patient</replace>
-      <replace>h6</replace>
-      <replace>'This is required'</replace>
-      <replace>lens-solution</replace>
-      <replace>solutions</replace>
-      <replace>solution</replace>
-      <replace>discountCode</replace>
-      <replace>discountAmount</replace>
-      <replace>discount</replace>
-      <replace>customer</replace>
+      <replace>UNT</replace>
+      <replace />
+      <replace>MAN</replace>
+      <replace>PRD</replace>
+      <replace>:</replace>
+      <replace>Catalog</replace>
+      <replace>Left</replace>
+      <replace>Notificaitons</replace>
+      <replace>pending</replace>
+      <replace>PendingOrders</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/.meteor</dir>
       <dir>$PROJECT_DIR$/imports/ui/layouts</dir>
       <dir>$PROJECT_DIR$/imports/ui/components</dir>
+      <dir>$PROJECT_DIR$/imports</dir>
+      <dir>$PROJECT_DIR$/imports/ui/pages</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -379,57 +379,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/imports/ui/pages/EditDiscount.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/NewDiscount.js" />
-        <option value="$PROJECT_DIR$/imports/startup/client/routes.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/DiscountsTable.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/Sidebar.js" />
-        <option value="$PROJECT_DIR$/imports/modules/login.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/imports/startup/client/index.js" />
-        <option value="$PROJECT_DIR$/imports/startup/client/plugins.js" />
-        <option value="$PROJECT_DIR$/.meteor/packages" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/Subscriptions.js" />
-        <option value="$PROJECT_DIR$/imports/api/invoices/invoices.js" />
-        <option value="$PROJECT_DIR$/imports/api/plans/plans.js" />
-        <option value="$PROJECT_DIR$/imports/api/public/handle-webhook.js" />
-        <option value="$PROJECT_DIR$/imports/api/public/index.js" />
-        <option value="$PROJECT_DIR$/imports/modules/server/stripe/webhooks/customer.subscription.deleted.js" />
-        <option value="$PROJECT_DIR$/imports/modules/server/stripe/webhooks/customer.subscription.updated.js" />
-        <option value="$PROJECT_DIR$/imports/modules/server/stripe/webhooks/invoice.payment_succeeded.js" />
-        <option value="$PROJECT_DIR$/imports/modules/server/stripe/handle-cancel-subscription.js" />
-        <option value="$PROJECT_DIR$/imports/modules/server/stripe/handle-change-subscription.js" />
-        <option value="$PROJECT_DIR$/imports/modules/server/stripe/handle-signup.js" />
-        <option value="$PROJECT_DIR$/imports/modules/server/stripe/handle-update-payment.js" />
-        <option value="$PROJECT_DIR$/imports/modules/server/stripe/index.js" />
-        <option value="$PROJECT_DIR$/imports/modules/get-stripe-token.js" />
+        <option value="$PROJECT_DIR$/imports/api/customers/server/methods.js" />
         <option value="$PROJECT_DIR$/imports/modules/doctor-signup.js" />
-        <option value="$PROJECT_DIR$/imports/modules/stripe.js" />
-        <option value="$PROJECT_DIR$/imports/modules/validate-document-quota.js" />
+        <option value="$PROJECT_DIR$/imports/api/pending-orders/server/methods.js" />
+        <option value="$PROJECT_DIR$/imports/api/pending-orders/server/publications.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/PendingOrders.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/Tables/PendingOrdersTable.js" />
+        <option value="$PROJECT_DIR$/imports/api/notifications/server/publications.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/Notifications/Notifications.js" />
+        <option value="$PROJECT_DIR$/imports/api/notifications/notifications.js" />
+        <option value="$PROJECT_DIR$/imports/modules/server/stripe/index.js" />
+        <option value="$PROJECT_DIR$/imports/api/pending-orders/pending-orders.js" />
+        <option value="$PROJECT_DIR$/imports/api/customers/customers.js" />
+        <option value="$PROJECT_DIR$/imports/modules/server/stripe/handle-signup.js" />
+        <option value="$PROJECT_DIR$/imports/modules/date-format.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/Editors/PatientEditor.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/ViewPatient.js" />
+        <option value="$PROJECT_DIR$/imports/modules/patient-editor.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/PatientCheckout/PatientCheckout.js" />
+        <option value="$PROJECT_DIR$/imports/modules/checkout.js" />
+        <option value="$PROJECT_DIR$/imports/modules/pending.js" />
+        <option value="$PROJECT_DIR$/imports/modules/approve-insurance.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/PatientEmail.js" />
+        <option value="$PROJECT_DIR$/imports/modules/patient-email.js" />
+        <option value="$PROJECT_DIR$/imports/api/patients/server/methods.js" />
+        <option value="$PROJECT_DIR$/imports/modules/server/handle-patient-email.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/Headers/HeaderDoctor.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/Headers/HeaderAdmin.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/Tables/PatientsTableDoctor.js" />
+        <option value="$PROJECT_DIR$/imports/modules/dates.js" />
+        <option value="$PROJECT_DIR$/imports/modules/server/handle-pending.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/Modals/InsuranceApprovalModal.js" />
+        <option value="$PROJECT_DIR$/imports/api/orders/server/methods.js" />
         <option value="$PROJECT_DIR$/imports/startup/server/api.js" />
-        <option value="$PROJECT_DIR$/imports/startup/server/browser-policy.js" />
-        <option value="$PROJECT_DIR$/imports/api/documents/methods.js" />
-        <option value="$PROJECT_DIR$/imports/api/documents/documents.js" />
-        <option value="$PROJECT_DIR$/imports/api/documents/documents.tests.js" />
-        <option value="$PROJECT_DIR$/imports/api/documents/methods.tests.js" />
-        <option value="$PROJECT_DIR$/imports/api/documents/server/publications.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/DocumentEditor.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/DocumentsList.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/Invoices.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/Plans.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/Loading.js" />
-        <option value="$PROJECT_DIR$/imports/ui/containers/DocumentsList.js" />
-        <option value="$PROJECT_DIR$/imports/ui/containers/EditDocument.js" />
-        <option value="$PROJECT_DIR$/imports/ui/containers/ViewDocument.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/Documents.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/EditDocument.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/NewDocument.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/Subscription.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/ViewDiscount.js" />
-        <option value="$PROJECT_DIR$/imports/ui/stylesheets/style.scss" />
+        <option value="$PROJECT_DIR$/imports/modules/server/stripe/webhooks/invoice.payment_succeeded.js" />
+        <option value="$PROJECT_DIR$/settings-production.js" />
+        <option value="$PROJECT_DIR$/settings-production.json" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/imports/modules/server/send-email-notifications.js" />
+        <option value="$PROJECT_DIR$/imports/modules/server/stripe/handle-pending.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/Sidebars/SidebarDoctor.js" />
+        <option value="$PROJECT_DIR$/imports/modules/server/create-notification.js" />
+        <option value="$PROJECT_DIR$/imports/modules/server/stripe/handle-checkout.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/DoctorRegistration.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/Card.js" />
-        <option value="$PROJECT_DIR$/imports/ui/stylesheets/css/_Signup.scss" />
+        <option value="$PROJECT_DIR$/settings-development.json" />
+        <option value="$PROJECT_DIR$/imports/modules/server/stripe/place-order.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/Sidebars/SidebarAdmin.js" />
+        <option value="$PROJECT_DIR$/imports/startup/client/routes.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/OrderHistory.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/Tables/OrderHistoryTable.js" />
+        <option value="$PROJECT_DIR$/imports/startup/server/fixtures.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/DoctorSalesReport.js" />
       </list>
     </option>
   </component>
@@ -445,10 +445,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
-    <option name="y" value="-687" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1023" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -469,10 +468,13 @@
           <State>
             <id>JavaScript</id>
           </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>JSUnresolvedVariable</id>
+            <id>BadExpressionStatementJS</id>
           </State>
         </selected-state>
       </profile-state>
@@ -499,21 +501,39 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drcontactlens" />
+              <option name="myItemId" value="BetaPortal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drcontactlens" />
+              <option name="myItemId" value="BetaPortal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drcontactlens" />
+              <option name="myItemId" value="BetaPortal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drcontactlens" />
+              <option name="myItemId" value="BetaPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BetaPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BetaPortal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -523,11 +543,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drcontactlens" />
+              <option name="myItemId" value="BetaPortal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drcontactlens" />
+              <option name="myItemId" value="BetaPortal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -535,7 +555,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="startup" />
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BetaPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BetaPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -545,11 +583,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drcontactlens" />
+              <option name="myItemId" value="BetaPortal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drcontactlens" />
+              <option name="myItemId" value="BetaPortal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -557,7 +595,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="startup" />
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stripe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BetaPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BetaPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -567,22 +627,32 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="js.meteor.project" value="true" />
     <property name="js.meteor.library.was.enabled" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.eslint" value="$USER_HOME$/.nvm/versions/node/v6.11.0/bin/node" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/AlfredoUrdaneta/Desktop/drcontactlens/imports/ui/components/ContactsTable.js" />
-    <property name="FullScreen" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/AlfredoUrdaneta/Desktop/drcontactlens/imports/api/data/notes" />
+    <property name="node.js.path.for.package.standard" value="$USER_HOME$/.nvm/versions/node/v6.11.0/bin/node" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/imports/ui/stylesheets" />
+      <recent name="$PROJECT_DIR$/imports/modules/server/stripe" />
+      <recent name="$PROJECT_DIR$/imports/modules/server" />
+      <recent name="$PROJECT_DIR$/imports/modules" />
+      <recent name="$PROJECT_DIR$/imports/ui/pages/Edit" />
+      <recent name="$PROJECT_DIR$/imports/ui/pages/View" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -680,23 +750,65 @@
       <workItem from="1494666879068" duration="28452000" />
       <workItem from="1494712090982" duration="39652000" />
       <workItem from="1494995505377" duration="69916000" />
-      <workItem from="1495510825430" duration="456000" />
+      <workItem from="1495510825430" duration="13174000" />
+      <workItem from="1495677124593" duration="763000" />
+      <workItem from="1495755059679" duration="7361000" />
+      <workItem from="1496165559524" duration="30835000" />
+      <workItem from="1496281346455" duration="49000" />
+      <workItem from="1496281425049" duration="94460000" />
+      <workItem from="1496908871672" duration="20688000" />
+      <workItem from="1496945847882" duration="9394000" />
+      <workItem from="1496962874494" duration="4754000" />
+      <workItem from="1496972752748" duration="104000" />
+      <workItem from="1496973447517" duration="5455000" />
+      <workItem from="1497485532766" duration="11022000" />
+      <workItem from="1497811718341" duration="59787000" />
+      <workItem from="1498156354037" duration="8363000" />
+      <workItem from="1498171613893" duration="11596000" />
+      <workItem from="1498226886352" duration="6271000" />
+      <workItem from="1498256848638" duration="9303000" />
+      <workItem from="1498280402503" duration="4000" />
+      <workItem from="1498300029737" duration="10147000" />
+      <workItem from="1498514374408" duration="66696000" />
+      <workItem from="1498857294049" duration="1605000" />
+      <workItem from="1499028694976" duration="6600000" />
+      <workItem from="1499377900512" duration="1028000" />
+      <workItem from="1501726297908" duration="3024000" />
+      <workItem from="1502500833951" duration="9662000" />
+      <workItem from="1502745490860" duration="2080000" />
+      <workItem from="1502781291281" duration="16027000" />
+      <workItem from="1502911694187" duration="625000" />
+      <workItem from="1503004292068" duration="1048000" />
+      <workItem from="1503428881808" duration="1797000" />
+      <workItem from="1503635109434" duration="161000" />
+      <workItem from="1503959904173" duration="203000" />
+      <workItem from="1503960562262" duration="704000" />
+      <workItem from="1504034624310" duration="3028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185095000" />
+    <option name="totallyTimeSpent" value="602457000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="-687" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24166666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -706,7 +818,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297456" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32602194" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -720,304 +832,185 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/imports/modules/validation.js</url>
-          <line>2</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/imports/api/contacts/methods.js</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/imports/ui/pages/ViewDocument.js</url>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/imports/ui/components/PatientCheckout/PatientCheckout2.js</url>
+          <line>1</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/webhooks/customer.subscription.updated.js">
+    <entry file="file://$PROJECT_DIR$/imports/modules/server/send-email-notifications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/webhooks/invoice.payment_succeeded.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="83" column="45" lean-forward="true" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/handle-cancel-subscription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/handle-change-subscription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="879">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/handle-update-payment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/cents-to-dollars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/dates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/get-stripe-token.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/doctor-signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/validation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="1273">
+          <caret line="68" column="2" lean-forward="true" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#37#60#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="false" />
+            <marker date="1499043052000" expanded="true" signature="1310:1425" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/client/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/accounts/email-templates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/browser-policy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/startup/server/fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="209">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/customers/customers.js">
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/Public/Public.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="4180">
+          <caret line="220" column="1" lean-forward="false" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/documents/documents.js">
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/Public/Registration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="38">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/documents/documents.tests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/documents/methods.tests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/documents/methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/documents/server/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/DocumentEditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/DocumentsList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/Invoices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/Plans.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/Loading.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/containers/DocumentsList.js">
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/DoctorRegistration.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/containers/EditDocument.js">
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/Card/Card.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="456">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/containers/ViewDocument.js">
+    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="551">
+          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/Documents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/EditDocument.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/NewDocument.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/NotFound.js">
+    <entry file="file://$PROJECT_DIR$/imports/modules/signup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/AdminRegistration.js">
+    <entry file="file://$PROJECT_DIR$/packages.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/Subscription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3572">
-          <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/ViewDiscount.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1957">
+          <caret line="103" column="29" lean-forward="false" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/modules/doctor-signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/Public/Public.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="220" column="1" lean-forward="false" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/Public/Registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/DoctorRegistration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/Card/Card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/modules/signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1957">
+          <caret line="103" column="29" lean-forward="false" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/modules/doctor-signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/stylesheets/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="106" column="24" lean-forward="false" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1028,74 +1021,220 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/main.js">
+    <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/Public/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/modules/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/modules/cents-to-dollars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings-development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/Public/Public.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="220" column="1" lean-forward="false" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/Public/Registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/stylesheets/css/_Subscriptions.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/stylesheets/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="127" column="28" lean-forward="false" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/handle-signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/modules/validate-document-quota.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        <state relative-caret-position="684">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/modules/stripe.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/stylesheets/css/_Signup.scss">
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/Card/Card.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="150" column="15" lean-forward="true" selection-start-line="150" selection-start-column="15" selection-end-line="150" selection-end-column="15" />
+        <state relative-caret-position="456">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/Card.js">
+    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="551">
+          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/modules/signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="103" column="29" lean-forward="false" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/modules/server/send-email-notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="68" column="2" lean-forward="false" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#36#0" expanded="false" />
+            <marker date="1499043052000" expanded="true" signature="1310:1425" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/server/fixtures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/SalesReport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/DoctorSalesReport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2166">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/client/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/modules/doctor-signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/DoctorRegistration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="80" column="41" lean-forward="false" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+        <state relative-caret-position="418">
+          <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/roles.js">
+    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/handle-signup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/Plans/Plans.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/place-order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/modules/server/stripe/handle-checkout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="78" column="3" lean-forward="true" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

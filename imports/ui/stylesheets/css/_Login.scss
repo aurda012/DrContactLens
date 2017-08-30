@@ -1,6 +1,5 @@
 .blue-login {
   padding-top: 3em;
-  box-sizing: border-box;
   min-height: 100vh;
   background:linear-gradient(0deg,rgba(21,162,254,0.85),rgba(21,162,254,0.85)),url("img/background.jpg");
   background-size: 100%;
@@ -40,13 +39,6 @@
 
 .portal-login .btn:hover {
   background-color: #2682d6;
-}
-
-@media only screen and (max-width: 575px) {
-  div .portal-login {
-    position: relative;
-    width: 90%;
-  }
 }
 
 .blue {
@@ -91,4 +83,3 @@ form label.error {
   font-weight: normal;
   color: lighten( red, 20% );
 }
-

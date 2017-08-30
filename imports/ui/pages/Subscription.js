@@ -7,9 +7,9 @@ import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
 import { Bert } from 'meteor/themeteorchef:bert';
 import Customers from '../../api/customers/customers';
-import Invoices from '../components/Invoices';
-import Plans from '../components/Plans';
-import Card from '../components/Card';
+import Invoices from '../components/Invoices/Invoices';
+import Plans from '../components/Plans/Plans';
+import Card from '../components/Card/Card';
 import PlansCollection from '../../api/plans/plans';
 import { epochToHuman } from '../../modules/dates';
 

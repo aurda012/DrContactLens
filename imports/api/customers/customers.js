@@ -24,6 +24,18 @@ const CustomersSchema = new SimpleSchema({
     type: String,
     label: 'The user\'s customer ID on Stripe.',
   },
+  accountId: {
+    type: String,
+    label: 'The user\'s connect account ID on Stripe.',
+  },
+  email: {
+    type: String,
+    label: 'The user\'s email.',
+  },
+  card: {
+    type: Object,
+    label: 'The customers credit card on file.',
+  },
   'card.brand': {
     type: String,
     label: 'The brand of credit card the customer has on file.',
@@ -31,6 +43,10 @@ const CustomersSchema = new SimpleSchema({
   'card.last4': {
     type: String,
     label: 'The last four digits of the credit card the customer has on file.',
+  },
+  subscription: {
+    type: Object,
+    label: 'The customers subscription.',
   },
   'subscription.id': {
     type: String,

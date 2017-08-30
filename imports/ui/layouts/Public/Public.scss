@@ -1,0 +1,305 @@
+.blue-login {
+  padding-top: 5em;
+  min-height: 100vh;
+  background:linear-gradient(0deg,rgba(21,162,254,0.85),rgba(21,162,254,0.85)),url("img/background.jpg") no-repeat fixed center;
+  background-size: cover;
+  .btn {
+    background: #04a5ff;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 8px 0;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  input {
+    background: #f3f3f3;
+  }
+
+  .control-label {
+    color: #969696;
+  }
+}
+
+.blue-signup {
+  padding-top: 3em;
+  min-height: 100vh;
+  background:linear-gradient(0deg,rgba(21,162,254,0.85),rgba(21,162,254,0.85)),url("../../img/background.jpg") no-repeat fixed center;
+  background-size: cover;
+  .btn {
+    background: #04a5ff;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 8px 0;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  input {
+    background: #f3f3f3;
+  }
+
+  .control-label {
+    color: #969696;
+  }
+}
+
+.login-app-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.portal-login {
+  margin: 40px auto;
+  box-shadow: 0 10px 50px grey;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .portal-login {
+    max-width: 66.66%;
+    margin-left: 16.66%;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .blue-login {
+    padding-top: 4em;
+  }
+  .portal-login {
+    max-width: 83.33%;
+    margin-left: 8.33%;
+  }
+}
+
+$color: white;
+$colorDark: darken($color, 10%) transparent;
+
+div .Registration {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 30px;
+  background: $color;
+  box-shadow: 0 10px 50px grey;
+}
+
+.Registration:after {
+  content: "";
+  position: absolute;
+  top: -4em;
+  left: 0;
+  right: 4em;
+  border-width: 2em;
+  border-style: solid;
+  border-color: $color;
+}
+
+.Registration:before {
+  content: "";
+  position: absolute;
+  top: -4em;
+  right: 0;
+  border-width: 0 4em 4em 0;
+  border-style: solid;
+  border-color: $colorDark;
+  box-shadow: 0 4px 4px grey;
+}
+
+.Registration {
+  margin-bottom: 40px;
+}
+
+.Registration form + p {
+  margin-top: 20px;
+}
+
+.Registration .Plans {
+  margin-bottm: 20px;
+}
+
+.Registration .Card {
+  margin: 15px;
+}
+
+
+.folded-corner {
+  background: -moz-linear-gradient(top,  #ffffff 0%, rgba(21,162,254,0.8) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,rgba(21,162,254,0.8))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,rgba(21,162,254,0.8) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 0%,rgba(21,162,254,0.8) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 0%,rgba(21,162,254,0.8) 100%); /* IE10+ */
+  background: linear-gradient(top,  #ffffff 0%,rgba(21,162,254,0.8) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='rgba(21,162,254,0.8)',GradientType=0 ); /* IE6-9 */
+  -webkit-box-shadow: 20px 30px rgba(0,0,0,0.2);
+  -moz-box-shadow: 20px 30px rgba(0,0,0,0.2);
+  box-shadow: 20px 30px rgba(0,0,0,0.2);
+  padding: 35px;
+  background: #FFF;
+}
+
+.folded-corner:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 0%;
+  right: 0%;
+  border-bottom: 70px solid #eee;
+  border-right: 70px solid transparent;
+  -webkit-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  -moz-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  box-shadow: -7px 7px 7px rgba(0,0,0,0.3);
+  z-index: 0;
+}
+
+.folded-corner:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  background:none;
+  border-top: 69px solid rgba(21,162,254,0.8);
+  border-left: 69px solid transparent;
+}
+
+.login-footer {
+  color: white;
+  text-align: center;
+}
+
+.forgot-password {
+  text-align: right;
+}
+
+form label.error {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  color: lighten( red, 20% );
+}
+
+.StripeElement {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+div.Card {
+  height: 35px;
+}
+
+.CardForm {
+  position: relative;
+  border: 1px solid #04a5ff;
+  border-radius: 3px;
+  padding: 10px 5px 10px 5px;
+  margin: 30px 0 20px;
+}
+
+label.Label.SecureStripe {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -142px;
+  padding: 0 10px;
+  color: #04a5ff;
+  text-align: center;
+  background: #FFFFFF;
+}
+
+@media only screen and (max-width: 425px) {
+  .CardForm {
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    padding: 20px 0 0 0;
+    margin: 30px 0 20px;
+  }
+}
+
+.Plans {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 3px;
+
+  .Plan {
+    display: block;
+    padding: 15px;
+    margin: 0;
+
+    input {
+      margin-right: 10px;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #eee;
+    }
+  }
+
+  .Plan.current {
+    pointer-events: none;
+
+    &:after {
+      float: right;
+      content: "Current Plan";
+      background: #5cb85c;
+      border: 1px solid #4cae4c;
+      color: #fff;
+      font-size: 10px;
+      text-transform: uppercase;
+      padding: 2px 4px;
+      border-radius: 3px;
+      margin-left: 10px;
+    }
+  }
+
+  .Plan:hover {
+    cursor: pointer;
+    background: #f3f3f3;
+  }
+}
+
+.Loading {
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin-left: 45%;
+}

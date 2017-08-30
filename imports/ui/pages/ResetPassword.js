@@ -16,15 +16,15 @@ export default class ResetPassword extends React.Component {
     return (
       <div className="z-depth-2">
         <Row>
-          <Col xs={10}
-               xsOffset={1}
-               sm={ 8 }
-               smOffset={2}
-               md={ 6 }
-               mdOffset={3}
-               lg={4}
-               lgOffset={4}
-               className="portal-login text-center"
+          <Col
+            xs={10}
+            sm={ 8 }
+            smOffset={3}
+            md={ 6 }
+            mdOffset={4}
+            lg={4}
+            lgOffset={4}
+            className="portal-login text-center"
           >
             <div className="login-app-title">
               <img src={'img/loginlogo.png'} height="107" width="150" alt="logo" />

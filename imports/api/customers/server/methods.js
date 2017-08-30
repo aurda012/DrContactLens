@@ -8,33 +8,34 @@ import handleUpdatePayment from '../../../modules/server/stripe/handle-update-pa
 Meteor.methods({
   signup(customer) {
     check(customer, Object);
+    console.log(customer);
     return handleSignup(customer)
-    .then(subscription => subscription)
-    .catch((error) => {
-      throw new Meteor.Error('500', `${error}`);
-    });
+      .then(subscription => subscription)
+      .catch((error) => {
+        throw new Meteor.Error('500', `${error}`);
+      });
   },
   changeSubscription(plan) {
     check(plan, String);
     return handleChangeSubscription({ userId: this.userId, newPlan: plan })
-    .then(subscription => subscription)
-    .catch((error) => {
-      throw new Meteor.Error('500', `${error}`);
-    });
+      .then(subscription => subscription)
+      .catch((error) => {
+        throw new Meteor.Error('500', `${error}`);
+      });
   },
   cancelSubscription() {
     return handleCancelSubscription(this.userId)
-    .then(cancellation => cancellation)
-    .catch((error) => {
-      throw new Meteor.Error('500', `${error}`);
-    });
+      .then(cancellation => cancellation)
+      .catch((error) => {
+        throw new Meteor.Error('500', `${error}`);
+      });
   },
   updatePayment(source) {
     check(source, String);
     return handleUpdatePayment({ userId: this.userId, source })
-    .then(update => update)
-    .catch((error) => {
-      throw new Meteor.Error('500', `${error}`);
-    });
+      .then(update => update)
+      .catch((error) => {
+        throw new Meteor.Error('500', `${error}`);
+      });
   },
 });

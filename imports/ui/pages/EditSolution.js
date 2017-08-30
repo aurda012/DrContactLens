@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { composeWithTracker } from 'react-komposer';
 import Solutions from '../../api/solutions/solutions';
-import SolutionEditor from '../components/SolutionEditor';
+import SolutionEditor from '../components/Editors/SolutionEditor';
 import NotFound from './NotFound';
 
 const EditSolution = ({ doc }) => (doc ? (
@@ -11,8 +11,10 @@ const EditSolution = ({ doc }) => (doc ? (
     <div className="row">
       <div className="col-lg-12">
         <div className="card">
+          <div className="card-header">
+            <h4 style={{ margin: '5px' }}><strong>Edit Solution</strong></h4>
+          </div>
           <div className="card-block">
-            <h4 className="page-header">Editing "{ doc.brandName }"</h4>
             <SolutionEditor />
           </div>
         </div>

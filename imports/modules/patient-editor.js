@@ -14,8 +14,18 @@ const handleUpsert = () => {
     firstName: document.querySelector('[name="firstName"]').value.trim(),
     lastName: document.querySelector('[name="lastName"]').value.trim(),
     emailAddress: document.querySelector('[name="emailAddress"]').value.trim(),
-    patientStatus: document.querySelector('[name="patientStatus"]').value.trim(),
-    contactBrand: document.querySelector('[name="contactBrand"]').value.trim(),
+    phoneNumber: document.querySelector('[name="phoneNumber"]').value.trim(),
+    dateOfBirth: component.dateOfBirth.state.value.toString(),
+    insuranceCompany: document.querySelector('[name="insuranceCompany"]').value.trim(),
+    insuranceId: document.querySelector('[name="insuranceId"]').value.trim(),
+    streetAddress: document.querySelector('[name="streetAddress"]').value.trim(),
+    cityAddress: document.querySelector('[name="cityAddress"]').value.trim(),
+    stateAddress: document.querySelector('[name="stateAddress"]').value.trim(),
+    zipAddress: document.querySelector('[name="zipAddress"]').value.trim(),
+    lastExam: component.lastExam.state.value.toString(),
+    prescriptionExpiration: component.prescriptionExpiration.state.value.toString(),
+    contactBrandRight: document.querySelector('[name="contactBrandRight"]').value.trim(),
+    contactBrandLeft: document.querySelector('[name="contactBrandLeft"]').value.trim(),
     powerRight: document.querySelector('[name="powerRight"]').value.trim(),
     powerLeft: document.querySelector('[name="powerLeft"]').value.trim(),
     cylinderRight: document.querySelector('[name="cylinderRight"]').value.trim(),
@@ -28,14 +38,15 @@ const handleUpsert = () => {
     baseCurveLeft: document.querySelector('[name="baseCurveLeft"]').value.trim(),
     diameterRight: document.querySelector('[name="diameterRight"]').value.trim(),
     diameterLeft: document.querySelector('[name="diameterLeft"]').value.trim(),
-    lastExam: document.querySelector('[name="lastExam"]').value.trim(),
-    prescriptionExpiration: document.querySelector('[name="prescriptionExpiration"]').value.trim(),
+    colorRight: document.querySelector('[name="colorRight"]').value.trim(),
+    colorLeft: document.querySelector('[name="colorLeft"]').value.trim(),
   };
 
   if (doc && doc._id) upsert._id = doc._id;
 
   upsertPatient.call(upsert, (error, response) => {
     if (error) {
+      console.log(error);
       Bert.alert(error.reason, 'danger');
     } else {
       component.patientEditorForm.reset();
@@ -57,9 +68,6 @@ const validate = () => {
       emailAddress: {
         required: true,
       },
-      patientStatus: {
-        required: true,
-      },
     },
     messages: {
       firstName: {
@@ -70,9 +78,6 @@ const validate = () => {
       },
       emailAddress: {
         required: 'This needs an email address, please.',
-      },
-      patientStatus: {
-        required: 'This needs a patient status, please.',
       },
     },
     submitHandler() { handleUpsert(); },

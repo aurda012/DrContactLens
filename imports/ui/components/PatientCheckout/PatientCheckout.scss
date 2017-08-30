@@ -1,0 +1,61 @@
+.panel-default>.panel-heading {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.StripeElement {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+div.Card {
+  height: 35px;
+}
+
+.CardForm {
+  position: relative;
+  border: 1px solid #04a5ff;
+  border-radius: 3px;
+  padding: 10px 5px 10px 5px;
+  margin: 30px 0 20px;
+}
+
+label.Label.SecureStripe {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -142px;
+  padding: 0 10px;
+  color: #04a5ff;
+  text-align: center;
+  background: #FFFFFF;
+}
+
+@media only screen and (max-width: 425px) {
+  .CardForm {
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    padding: 20px 0 0 0;
+    margin: 30px 0 20px;
+  }
+}

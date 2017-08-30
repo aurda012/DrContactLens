@@ -1,30 +1,11 @@
+/* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ButtonGroup, Button } from 'react-bootstrap';
-import { browserHistory } from 'react-router';
+import { Alert } from 'react-bootstrap';
 import { composeWithTracker } from 'react-komposer';
 import { Meteor } from 'meteor/meteor';
-import { Bert } from 'meteor/themeteorchef:bert';
-import Contacts from '../../api/contacts/contacts';
-import { removeContact } from '../../api/contacts/methods';
-import NotFound from './NotFound';
+import Catalog from '../../api/catalog/catalog';
 
-const handleEdit = (_id) => {
-  browserHistory.push(`/admin/contacts/${_id}/edit`);
-};
-
-const handleRemove = (_id) => {
-  if (confirm('Are you sure? This is permanent!')) {
-    removeContact.call({ _id }, (error) => {
-      if (error) {
-        Bert.alert(error.reason, 'danger');
-      } else {
-        Bert.alert('Contact deleted!', 'success');
-        browserHistory.push('/admin/contacts');
-      }
-    });
-  }
-};
 
 const ViewContact = ({ doc }) => {
   return doc ? (
@@ -33,25 +14,21 @@ const ViewContact = ({ doc }) => {
         <div className="col-lg-offset-2 col-lg-8">
           <div className="card">
             <div className="card-header">
-              <i className="fa fa-align-justify"></i> { doc.brandName }
+              <h4 style={{ margin: '5px' }}><strong>{ doc.SER_NAME }</strong></h4>
             </div>
             <div className="card-block">
-              <div>
-                <h4>Brand Name: { doc && doc.brandName }</h4>
-                <h4>Manufacturer: { doc && doc.manufacturer }</h4>
-                <h4>Retail Price: { doc && doc.retailPrice }</h4>
-                <h4>Wholesale Price: { doc && doc.wholesalePrice }</h4>
-              </div>
-              <ButtonGroup className="pull-right" bsSize="medium">
-                <Button onClick={ () => handleEdit(doc._id) }>Edit</Button>
-                <Button onClick={ () => handleRemove(doc._id) } className="text-danger">Delete</Button>
-              </ButtonGroup>
+              <ul className="list-group">
+                <li className="list-group-item"><strong>Brand Name: </strong>&nbsp;{ doc && doc.SER_NAME }</li>
+                <li className="list-group-item"><strong>Manufacturer: </strong>&nbsp;{ doc && doc.MAN_NAME }</li>
+                <li className="list-group-item"><strong>Retail Price: </strong>&nbsp;{ doc && doc.SER_RETAIL }</li>
+                <li className="list-group-item"><strong>Wholesale Price: </strong>&nbsp;{ doc && doc.SER_WHOLESALE }</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-  ) : <NotFound />;
+  ) : <Alert bsStyle="warning">Well, fudge. We couldn't find that document!</Alert>;
 };
 
 ViewContact.propTypes = {
@@ -60,10 +37,10 @@ ViewContact.propTypes = {
 
 const composer = (props, onData) => {
   const contactId = props.params._id;
-  const subscription = Meteor.subscribe('contacts.view', contactId);
+  const subscription = Meteor.subscribe('catalog.view', contactId);
 
   if (subscription.ready()) {
-    const doc = Contacts.findOne(contactId);
+    const doc = Catalog.findOne(contactId);
     onData(null, { doc });
   }
 };

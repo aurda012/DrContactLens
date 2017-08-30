@@ -2,7 +2,7 @@
 
 import { browserHistory } from 'react-router';
 import { Bert } from 'meteor/themeteorchef:bert';
-import { upsertContact } from '../api/contacts/methods.js';
+import { upsertContact } from '../api/catalog/methods.js';
 import './validation.js';
 
 let component;
@@ -11,10 +11,10 @@ const handleUpsert = () => {
   const { doc } = component.props;
   const confirmation = doc && doc._id ? 'Contact updated!' : 'Contact added!';
   const upsert = {
-    manufacturer: document.querySelector('[name="manufacturer"]').value.trim(),
-    brandName: document.querySelector('[name="brandName"]').value.trim(),
-    wholesalePrice: document.querySelector('[name="wholesalePrice"]').value.trim(),
-    retailPrice: document.querySelector('[name="retailPrice"]').value.trim(),
+    MAN_NAME: document.querySelector('[name="MAN_NAME"]').value.trim(),
+    SER_NAME: document.querySelector('[name="SER_NAME"]').value.trim(),
+    SER_WHOLESALE: document.querySelector('[name="SER_WHOLESALE"]').value.trim(),
+    SER_RETAIL: document.querySelector('[name="SER_RETAIL"]').value.trim(),
   };
 
   if (doc && doc._id) upsert._id = doc._id;

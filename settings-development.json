@@ -1,15 +1,12 @@
 {
-  "galaxy.meteor.com": {
-    "env": {
-      "ROOT_URL": "http://drcontactlens.meteorapp.com",
-      "MONGO_URL": "mongodb://alfredourdaneta:Caracas$12@ds145431-a0.mlab.com:45431,ds145431-a1.mlab.com:45431/drcontactlens?replicaSet=rs-ds145431",
-      "MONGO_OPLOG_URL": "mongodb://oplog-reader:Caracas$12@ds145431-a0.mlab.com:45431,ds145431-a1.mlab.com:45431/local?authSource=admin&replicaSet=rs-ds145431"
-    }
-  },
   "public": {
-    "stripe": "pk_test_GvAhI4ciRc5fLLXPxr1OxzJd"
+    "stripe": "pk_test_mXhbxp6kvMHfk3qfqcUu9rQv"
   },
   "private": {
-    "stripe": "sk_test_Avu6nbzhzrLvanplT86JIj4I"
+    "MAIL_URL": "smtp://Dr-Contact-Lens:nszzfWkB9E6LwVIjG31pEw@smtp.mandrillapp.com:587",
+    "stripe": "sk_test_HP2dQYm7eoy8vIJP7yCTJxmR",
+    "mandrill": {
+      "apiKey": "nszzfWkB9E6LwVIjG31pEw"
+    }
   }
 }

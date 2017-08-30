@@ -1,8 +1,10 @@
 
 .page-header {
     padding: $spacer-y 0;
+    color: #04a5ff;
     background: $breadcrumb-bg;
     border-bottom: 1px solid $border-color;
+    margin: 0 0 20px;
 
     h1 {
         margin: 0;
@@ -19,12 +21,14 @@
     }
 }
 
-$sidebar-header-height: 200px;
+$sidebar-header-height: 100px;
 
 body:not(.top-nav) {
     .sidebar {
         .sidebar-header {
             height: $sidebar-header-height;
+            padding-top: 20px;
+            font-size: 20px;
             padding-bottom: 10px;
             text-align: center;
             background: $sidebar-header-bg;
@@ -36,11 +40,11 @@ body:not(.top-nav) {
             }
 
             .text-muted {
-                margin-top: -5px;
+                margin-top: 15px;
             }
 
             > .btn-group {
-                margin-top: 10px;
+                margin-top: 15px;
             }
 
             .btn-link {

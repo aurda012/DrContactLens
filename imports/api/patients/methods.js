@@ -2,6 +2,7 @@ import SimpleSchema from 'simpl-schema';
 import { ValidatedMethod } from 'meteor/mdg:validated-method';
 import Patients from './patients';
 import rateLimit from '../../modules/rate-limit.js';
+import isAuthorized from '../../modules/is-authorized.js';
 
 export const upsertPatient = new ValidatedMethod({
   name: 'patients.upsert',
@@ -10,8 +11,18 @@ export const upsertPatient = new ValidatedMethod({
     firstName: { type: String, optional: true },
     lastName: { type: String, optional: true },
     emailAddress: { type: String, optional: true },
-    patientStatus: { type: String, optional: true },
-    contactBrand: { type: String, optional: true },
+    phoneNumber: { type: String, optional: true },
+    dateOfBirth: { type: String, optional: true },
+    insuranceCompany: { type: String, optional: true },
+    insuranceId: { type: String, optional: true },
+    streetAddress: { type: String, optional: true },
+    cityAddress: { type: String, optional: true },
+    stateAddress: { type: String, optional: true },
+    zipAddress: { type: String, optional: true },
+    lastExam: { type: String, optional: true },
+    prescriptionExpiration: { type: String, optional: true },
+    contactBrandRight: { type: String, optional: true },
+    contactBrandLeft: { type: String, optional: true },
     powerRight: { type: String, optional: true },
     powerLeft: { type: String, optional: true },
     cylinderRight: { type: String, optional: true },
@@ -24,11 +35,14 @@ export const upsertPatient = new ValidatedMethod({
     baseCurveLeft: { type: String, optional: true },
     diameterRight: { type: String, optional: true },
     diameterLeft: { type: String, optional: true },
-    lastExam: { type: String, optional: true },
-    prescriptionExpiration: { type: String, optional: true },
+    colorRight: { type: String, optional: true },
+    colorLeft: { type: String, optional: true },
   }).validator(),
   run(patient) {
-    return Patients.upsert({ _id: patient._id }, { $set: patient });
+    const patientToInsert = patient;
+    const owner = isAuthorized({ userId: this.userId, patientId: patient._id });
+    patientToInsert.owner = owner;
+    return Patients.upsert({ _id: patient._id }, { $set: patientToInsert });
   },
 });
 
@@ -37,8 +51,10 @@ export const removePatient = new ValidatedMethod({
   validate: new SimpleSchema({
     _id: { type: String },
   }).validator(),
-  run({ _id }) {
-    Patients.remove(_id);
+  run(patient) {
+    if (isAuthorized({ userId: this.userId, patientId: patient._id })) {
+      Patients.remove(patient._id);
+    }
   },
 });
 

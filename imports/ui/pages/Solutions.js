@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
-import { Button } from 'react-bootstrap';
-import SolutionsTable from '../components/SolutionsTable';
+import SolutionsTable from '../components/Tables/SolutionsTable';
 
 const Solutions = () => (
   <div className="animated fadeIn">
@@ -9,16 +7,9 @@ const Solutions = () => (
       <div className="col-lg-12">
         <div className="card">
           <div className="card-header">
-            <i className="fa fa-align-justify"></i> Solutions
+            <h4 style={{ margin: '5px' }}><strong>Lens Solutions</strong></h4>
           </div>
           <div className="card-block">
-            <Link to="/admin/solutions/new">
-              <Button
-                bsStyle="success"
-                className="pull-right"
-                style={{margin: '10px'}}
-              >New Solution</Button>
-            </Link>
             <SolutionsTable />
           </div>
         </div>

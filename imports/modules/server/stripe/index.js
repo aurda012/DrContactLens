@@ -31,6 +31,26 @@ export const updateCustomer = (customerId, update) =>
   stripe.customers.update(customerId, update);
 
 /*
+ charge = {
+ amount: Integer,
+ description: String,
+ };
+ */
+export const createCharge = charge =>
+  stripe.charges.create(charge);
+
+export const createCard = account =>
+  stripe.accounts.createExternalAccount({ account }, {
+    external_account: { account },
+  });
+
+export const createAccount = account =>
+    stripe.accounts.create(account);
+
+export const createToken = token =>
+  stripe.tokens.create(token);
+
+/*
  subscription = {
  customer: String, // ID of the customer on Stripe. For example: cus_AGLTqnNknWBxKF.
  plan: String, // The ID of the plan to subscribe the customer to. For example: large.

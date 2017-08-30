@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { composeWithTracker } from 'react-komposer';
+import PatientEditor from '../components/Editors/PatientEditor';
 import Patients from '../../api/patients/patients';
-import PatientEditor from '../components/PatientEditor';
 import NotFound from './NotFound';
 
 const EditPatient = ({ doc }) => (doc ? (
@@ -11,9 +11,11 @@ const EditPatient = ({ doc }) => (doc ? (
     <div className="row">
       <div className="col-lg-12">
         <div className="card">
+          <div className="card-header">
+            <h4 style={{ margin: '5px' }}><strong>Editing "{ doc.firstName } { doc.lastName }"</strong></h4>
+          </div>
           <div className="card-block">
-            <h4 className="page-header">Editing "{ doc.firstName } { doc.lastName }"</h4>
-            <PatientEditor />
+            <PatientEditor doc={ doc } />
           </div>
         </div>
       </div>

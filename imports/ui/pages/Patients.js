@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { Button } from 'react-bootstrap';
-import PatientsTable from '../components/PatientsTable';
+import PatientsTable from '../components/Tables/PatientsTableDoctor';
 
 const Patients = () => (
   <div className="animated fadeIn">
@@ -9,17 +9,17 @@ const Patients = () => (
       <div className="col-lg-12">
         <div className="card">
           <div className="card-header">
-            <i className="fa fa-align-justify"></i> Patients
+            <h4 style={{ margin: '5px' }}><strong>Patients</strong></h4>
           </div>
           <div className="card-block">
-            <Link to="/doctor/patients/new">
+            <Link to={'/doctor/patients/new'} >
               <Button
                 bsStyle="success"
                 className="pull-right"
-                style={{margin: '10px'}}
+                style={{ margin: '0' }}
               >New Patient</Button>
             </Link>
-            <PatientsTable />
+            <PatientsTable style={{ margin: '0' }} />
           </div>
         </div>
       </div>

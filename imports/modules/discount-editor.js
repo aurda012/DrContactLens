@@ -39,40 +39,10 @@ const validate = () => {
       discountCode: {
         required: true,
       },
-      startDate: {
-        required: true,
-      },
-      endDate: {
-        required: true,
-      },
-      discountAmount: {
-        required: true,
-      },
-      minimumSpend: {
-        required: true,
-      },
-      discountType: {
-        required: true,
-      },
     },
     messages: {
       discountCode: {
         required: 'Need a discount code here, please.',
-      },
-      startDate: {
-        required: 'This needs a start date, please.',
-      },
-      endDate: {
-        required: 'This needs an end date, please.',
-      },
-      discountAmount: {
-        required: 'This needs a discount amount, please.',
-      },
-      minimumSpend: {
-        required: 'This needs a minimum spend, please.',
-      },
-      discountType: {
-        required: 'This needs a discount type, please.',
       },
     },
     submitHandler() { handleUpsert(); },

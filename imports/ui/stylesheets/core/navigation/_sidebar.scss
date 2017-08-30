@@ -29,6 +29,10 @@
     -ms-overflow-style: -ms-autohiding-scrollbar;
     @include sidebar-width($sidebar-borders, $sidebar-width);
 
+    .nav .nav-item .nav-link {
+      padding: 2rem;
+    }
+
     a.nav-link {
       font-size: 14px;
     }

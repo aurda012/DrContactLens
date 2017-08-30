@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { composeWithTracker } from 'react-komposer';
 import Discounts from '../../api/discounts/discounts';
-import DiscountEditor from '../components/DiscountEditor';
+import DiscountEditor from '../components/Editors/DiscountEditor';
 import NotFound from './NotFound';
 
 const EditDiscount = ({ doc }) => (doc ? (
@@ -11,8 +11,11 @@ const EditDiscount = ({ doc }) => (doc ? (
     <div className="row">
       <div className="col-lg-12">
         <div className="card">
+          <div className="card-header">
+            <h4 style={{ margin: '5px' }}><strong>Edit Discount</strong></h4>
+          </div>
           <div className="card-block">
-            <h4 className="page-header">Editing "{ doc.brandName }"</h4>
+            <h4 className="page-header">Editing "{ doc.discountCode }"</h4>
             <DiscountEditor />
           </div>
         </div>

@@ -37,6 +37,8 @@ const buildInvoiceFromCharge = (
   try {
     return !invoice ? {
       userId: _id,
+      doctorId: '',
+      patientId: '',
       date: created,
       paid,
       amount_due: amount,
@@ -55,8 +57,10 @@ const buildInvoice = (
 ) => {
   try {
     return {
-      productService: 'membership',
+      productService: 'membership', // change to doctorSubscription?
       userId: _id,
+      doctorId: '',
+      patientId: '',
       date,
       paid,
       amount_due,
@@ -76,16 +80,13 @@ const invoicePaymentSucceeded = Meteor.bindEnvironment((webhook) => {
     const invoiceType = webhook.data.object.object; // equals 'invoice' or 'charge'
     const invoiceData = webhook.data.object;
     const customerId = invoiceData.customer;
-    const customer = Customers.findOne({ customerId });
+    const doctor = Customers.findOne({ customerId });
+    const order = Orders.findOne({ customerId });
 
-    if (customer) {
-      const user = Meteor.users.findOne(
-        { _id: customer.userId },
-        { fields: { emails: 1, profile: 1 } }
-      );
+    if (doctor || customer) {
 
-      if (invoiceType === 'invoice') invoice = buildInvoice(user, invoiceData);
-      if (invoiceType === 'charge') invoice = buildInvoiceFromCharge(user, invoiceData);
+      if (invoiceType === 'invoice') invoice = buildInvoice(user, invoiceData); // This is the doctor's subscription.
+      if (invoiceType === 'charge') invoice = buildInvoiceFromCharge(user, invoiceData); // This is the patient's payment.
       if (invoice) Invoices.insert(invoice);
     } else {
       console.warn(`Customer ${invoiceData.customer} not found.`);
